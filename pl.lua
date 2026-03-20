@@ -283,73 +283,73 @@ module.spells = {}
 --SPELL NAMES
 
 local CommonSpellNames = {
-	["rigevent"] = "%s Rig",
-	["mode"] = "Drones %s Mode",
-	["refill"] = "Mana Overload (%s)",
-	["union"] = "Ghost Union (%s)",
+	["rigevent"] = "Psota %s",
+	["mode"] = "Tryb %s",
+	["refill"] = "Wypełnienie Many (%s)",
+	["union"] = "Połączenie z Duchem (%s)",
 }
 
 module.spells.names = {
 
 	--PATRON
-	["summon"] = "Create Stairs",
-	["restore"] = "Call the Orb", 
-	["split"] = "Rebuild Opposite",
-	["shrinkabove"] = "Shrink Above Stairs",
-	["link"] = "Create Link",
-	["portal"] = "Create Portal",
+	["summon"] = "Stwórz Schody",
+	["restore"] = "Przyprowadź Cel", 
+	["split"] = "Zmień Stronę Schodów",
+	["shrinkabove"] = "Zmniejsz Schody Nad Tobą",
+	["link"] = "Stwórz Most",
+	["portal"] = "Stwórz Portal",
 
-	["summoner"] = "Summoner",
-	["patronevent"] = "Stairs Overload",
-	["patronaltevent"] = "Shrinkage",
+	["summoner"] = "Stworzyciel",
+	["patronevent"] = "Armageddon Schodów",
+	["patronaltevent"] = "Zmniejszenie",
 
 	--JOKER 
-	["flip"] = "Flip Stairs",
-	["flipabove"] = "Flip Above Stairs",
-	["fake"] = "Create Fake Stairs",
-	["invisible"] = "Create Invisible Stairs",
-	["disco"] = "Disco Stairs",
-	["trap"] = "Create Trap",
+	["flip"] = "Wywróć Schody",
+	["flipabove"] = "Wywróć Schody Nad Tobą",
+	["fake"] = "Stwórz Schody Oszusta",
+	["invisible"] = "Stwórz Niewidzialne Schody",
+	["disco"] = "Stwórz Schody Disco",
+	["trap"] = "Stwórz Pułapkę",
 
-	["flipper"] = "Flipper",
-	["jokerevent"] = "The Cloak",
-	["jokeraltevent"] = "Flip Them All",
+	["flipper"] = "Wywracacz",
+	["jokerevent"] = "Płaszcz Znikania",
+	["jokeraltevent"] = "Wywróć Je Wszystkie",
 
 	--WICKED
-	["destroy"] = "Destroy Stairs",
-	["destroyabove"] = "Destroy Above Stairs",
-	["bend"] = "Bend Stairs Up",
-	["damage"] = "Damage Above Stairs",
-	["flatten"] = "Bend Opposite Stairs Down",
-	["wall"] = "Create Wall" ,
+	["destroy"] = "Zniszcz Schody",
+	["destroyabove"] = "Zniszcz Schody Nad Tobą",
+	["bend"] = "Skręć Schody Do Góry",
+	["damage"] = "Damage Above Stairs", --zrób to później
+	["flatten"] = "Skręć Schody Do Dołu",
+	["wall"] = "Stwórz Ścianę" ,
 
-	["bender"] = "Bender",
-	["wickedevent"] = "Destruction",
-	["wickedaltevent"] = "Purge",
+	["bender"] = "Wykręcacz",
+	["wickedevent"] = "Niszczyciel",
+	["wickedaltevent"] = "Totalne Niszczenie",
 
 	--KEEPER
-	["move"] = "Move Stairs",
-	["rotate"] = "Rotate Stairs",
-	["moveup"] = "Move Stairs Up",
-	["movedown"] = "Restore Stairs",
-	["moverandom"] = "Random Above Move",
-	["rig"] = "Random Move",
+	["move"] = "Rusz Schody",
+	["rotate"] = "Obróć Schody",
+	["moveup"] = "Podnieś Schody",
+	["movedown"] = "Przywróć Schody",
+	["moverandom"] = "Losowy Ruch Schodów Nad Tobą",
+	["rig"] = "Random Move", -- zrób to później
 
-	["ascension"] = "Ascension",
-	["keeperevent"] = "Reshuffle",
-	["keeperaltevent"] = "Restoration",
+	["ascension"] = "Podnaszacz",
+	["keeperevent"] = "Pomieszanie",
+	["keeperaltevent"] = "Przywracacz",
 
 	--SPECTRE
-	["phantom"] = "Create Phantom Stairs",
-	["ghost"] = "Ghostify Above Stairs",
+	["phantom"] = "Stwórz Duchowe Schody",
+	["ghost"] = "Ghostify Above Stairs", -- wszystko co ma ghostify zrób później
 	["shadow"] = "Ghostify Stairs",
-	["horizontal"] = "Horizontal Teleport",
-	["random"] = "Random Teleport",
-	["vertical"] = "Vertical Teleport",
+	["horizontal"] = "Teleport",
+	["random"] = "Losowy Teleport",
+	["vertical"] = "Teleport Do Góry",
 
-	["traveller"] = "Shimmering",
-	["spectreevent"] = "Phantom Shuffle",
-	["spectrealtevent"] = "Æther Realm",
+	["traveller"] = "Masowa Teleportacja",
+	["spectreevent"] = "Pomieszanie Ducha",
+	["spectrealtevent"] = "Æther Realm", -- też zrób to później
 
 	--HACKER
 	["dash"] = "Dash",
