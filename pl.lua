@@ -283,7 +283,7 @@ module.spells = {}
 --SPELL NAMES
 
 local CommonSpellNames = {
-	["rigevent"] = "Psota %s",
+	["rigevent"] = "%s Rig",
 	["mode"] = "Tryb %s",
 	["refill"] = "Wypełnienie Many (%s)",
 	["union"] = "Połączenie z Duchem (%s)",
