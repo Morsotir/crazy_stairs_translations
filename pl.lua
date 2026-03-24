@@ -12,14 +12,14 @@ module.gui = {}
 
 module.gui.basic = {
 
-	["default"] = "DEFAULT",
-	["validate"] = "VALIDATE",
+	["default"] = "NORMALNIE",
+	["validate"] = "UPRAWOMOCNIENIE",
 
 }
 
 module.gui.switcher = {
 
-	["join"] = "JOIN",
+	["join"] = "DOŁĄCZ",
 	["friends"] = "FRIENDS ONLINE",
 	["refresh"] = "refreshing...",
 	["fail"] = "FAILED TO REFRESH!",
