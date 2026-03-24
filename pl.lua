@@ -124,73 +124,73 @@ module.gui.stats = {
 	["best"] = "NAJLEPSZY CZAS",
 	["norecord"] = "[no record]",
 
-	["2124486274"] = "Prank the Creator",
-	["1803533030753957"] = "Black Hole",
-	["2124480173"] = "Wicked's Treason",
-	["2124480172"] = "Joker's Trick",
-	["2124637294"] = "Drifter's Voyage",
-	["2124517579"] = "Thief's Heist",
-	["4464785885277417"] = "Splicer's Twist",
-	["2124480174"] = "Keeper's Order",
-	["2124637293"] = "Archon's Connection",
-	["2124517578"] = "Hacker's Exploit",
-	["707445818894757"] = "Gremlin's Spiral",
-	["2124480171"] = "Patron's Pride",
-	["1407551481032773"] = "Reaver's Reflection",
-	["2124637295"] = "Heretic's Curse",
-	["1885715582646280"] = "Necromancer's Rite",
-	["2124480175"] = "Muggle's Logic",
-	["2124826874"] = "Full Circle",
-	["2124529966"] = "Skipped the Tutorial",
-	["2124826880"] = "Possessed Fate",
-	["3731010929572663"] = "Hypnotised Dream",
-	["840574993122888"] = "Perspective Reflected",
-	["2124913225"] = "Architect's Design",
-	["2124702954"] = "Rootkit Installed",
-	["2124702945"] = "Destroy Everything",
-	["2124702946"] = "Order Restored",
-	["128721686760593"] = "You Spin me Round and Round.",
-	["2124702952"] = "I'll Take the Elevator",
-	["3121101516427751"] = "The Entanglement",
-	["2124702942"] = "Leave no Noob Behind",
-	["2124702950"] = "Illuminati Confirmed",
-	["2124702951"] = "Mine, Mine all MINE!",
-	["1165646024608180"] = "We are One.",
-	["2303731210592278"] = "Rise, Rise, RISE!",
-	["2124702949"] = "Excommunication",
-	["2124702943"] = "Pranking is Living",
-	["2124702948"] = "Spells are Overrated",
-	["2124826876"] = "Perfect Circle",
-	["2124645341"] = "Secret Badge",
-	["2126893403"] = "Super Secret Badge",
-	["2126893411"] = "Mega Secret Badge",
+	["2124486274"] = "Zprankuj Twórce Gry",
+	["1803533030753957"] = "Czarna Dziura",
+	["2124480173"] = "Zdrada Wicked'a",
+	["2124480172"] = "Trik Joker'a",
+	["2124637294"] = "Podróż Drifter'a",
+	["2124517579"] = "Napad Thief'a",
+	["4464785885277417"] = "Skręcenie Splicer'a",
+	["2124480174"] = "Porządek Keeper'a",
+	["2124637293"] = "Połączenie Archon'a",
+	["2124517578"] = "Eksploit Hacker'a",
+	["707445818894757"] = "Spirala Gremlin'a",
+	["2124480171"] = "Duma Patron'a", -- nie rób żartów o gejach, nie rób żartów o gejach...
+	["1407551481032773"] = "Refleksja Reaver'a",
+	["2124637295"] = "Przekleństwo Heretic'a",
+	["1885715582646280"] = "Rytuał Necromancer'a",
+	["2124480175"] = "Logika Muggle'a",
+	["2124826874"] = "Pełne Koło",
+	["2124529966"] = "Pominięcie Samouczka",
+	["2124826880"] = "Opętany Los",
+	["3731010929572663"] = "Hipnotyzowany Sen",
+	["840574993122888"] = "Refleksyjna Perspektywa",
+	["2124913225"] = "Design Architect'a",
+	["2124702954"] = "Zainstalowano Rootkit",
+	["2124702945"] = "Zniszcz Wszystko!!!",
+	["2124702946"] = "Porządek Przywrócony",
+	["128721686760593"] = "Obracasz Mnie W Kółko",
+	["2124702952"] = "Ja Wezmę Windę",
+	["3121101516427751"] = "Splątenie",
+	["2124702942"] = "Nie zostawiać żadnego noob'a",
+	["2124702950"] = "Illuminati Potwierdzone",
+	["2124702951"] = "Moje, Moje, TYLKO MOJE!!!",
+	["1165646024608180"] = "Jesteśmy Jednością",
+	["2303731210592278"] = "Choćcie, Choćcie, CHOĆCIE!",
+	["2124702949"] = "Ekskomunikacja",
+	["2124702943"] = "Prankowanie Ro Życie",
+	["2124702948"] = "Zaklęcia Są Przereklamowane",
+	["2124826876"] = "Perfekcjyne Koło",
+	["2124645341"] = "Sekretna Odznaka",
+	["2126893403"] = "Super Sekretna Odznaka",
+	["2126893411"] = "Mega Sekretna Odznaka",
 
 }
 
 
 module.gui.questions = {
-	["cancel"] = "Do you want to cancel this timed spell? Tokens will not be refunded.",
-	["tutorial"]= "Would you like to play the tutorial?",
-	["skip"] = "Would you like to skip the tutorial?",
-	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
+	["cancel"] = "Czy chcesz odwołać te zaklęcie? Tokeny nie będą zwrócone.",
+	["tutorial"]= "Czy chcesz przejść Samouczek?",
+	["skip"] = "Czy chcesz pominąć Samouczek?",
+	["reshuffle"] = "Czy chcesz żeby schody omijały kolizje jeśli się będą ruszać? Jeśli nie, schody na drodze będą zniszczone.",
 	
 	--new
-	["gift"] = "Do you want to gift %s Game Pass to another player?",
-	["choose"] = "Choose a player to receive %s Game Pass", 
-	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
-	["received"] = "You have received %s Game Pass, courtesy of %s!",
+	["gift"] = "Czy chcesz dać %s przepustkę Dla innego gracza?",
+	["choose"] = "Wybierz gracza, któy dostanie %s przepustkę", 
+	["confirm"] = "Czy chcesz podarować %s przepustkę dla %s?", --second %s is the chosen player
+	["received"] = "Dostałeś %s przepustkę, od %s!",
 	
 	["architect"] = "Architect",
-	["mana"] = "+10 Mana Storage",
+	["mana"] = "+10 Many",
 	["spectre"] = "Spectre",
 	["chameleon"] = "Chameleon",
 
 	--end new
 	--new
-	["race"] = "Join race?",
-	["racein"] = "Race in:",
-	["go"] = "GO!",
-	["raceoff"] = "Race cancelled",
+	["race"] = "Chcesz dołączyć do wyścigu?",
+	["racein"] = "Wyścig za:",
+	["go"] = "START!",
+	["raceoff"] = "Wyścig odwołany",
  	--end new
 }
 --END NEW
@@ -199,49 +199,49 @@ module.gui.questions = {
 
 module.gui.codes = {
 
-	["title"] = "ENTER THE CODE",
-	["body"] = "Input Your code here:",
-	["prompt"] = "(code)",
-	["button"] = "VALIDATE",
+	["title"] = "WPISZ KOD",
+	["body"] = "wpisz kod tutaj:",
+	["prompt"] = "(kod)",
+	["button"] = "Uprawomacnianie...",
 
 }
 
 module.gui.jukebox = {
 
-	["title"] = "JUKEBOX",
+	["title"] = "SZAFA GRAJĄCA",
 
-	["master"] = "MASTER VOLUME",
-	["default"] = "(using master volume)",
-	["climb"] = "CLIMB MUSIC",
-	["endgame"] = "ENDGAME MUSIC",
+	["master"] = "GŁOŚNOŚĆ",
+	["default"] = "(używa głośności)",
+	["climb"] = "MUZYKA DO WSPINANIA SIĘ",
+	["endgame"] = "MUZYKA DO KOŃCA GRY",
 	["failed"] = "[failed to load]",
 	--NEW
-	["off"] = "MUTED",
+	["off"] = "WYŁĄCZONE",
 	--END NEW
 }
 
 module.gui.results = {
 
-	["title"] = "RACE RESULTS",
+	["title"] = "WYNIKI WYŚCIGU",
 
-	["place"] = "PLACE",
-	["name"] = "NAME",
-	["level"] = "MAX LEVEL",
-	["time"] = "TIME",
-	["rank"] = "RANK",
+	["place"] = "MIEJSCE",
+	["name"] = "NAZWA",
+	["level"] = "MAKSYMALNY POZIOM",
+	["time"] = "CZAS",
+	["rank"] = "RANGA",
 	["not"] = "N/A",
-	[1] = "WINNER",
-	[2] = "2nd",
-	[3] = "3rd",
-	[4] = "4th",
-	[5] = "5th",
-	[6] = "6th",
-	[7] = "7th",
-	[8] = "8th",
-	[9] = "9th",
-	[10] = "10th",
-	[11] = "11th",
-	[12] = "12th",
+	[1] = "ZWYCIĘZCA",
+	[2] = "drugi",
+	[3] = "trzeci",
+	[4] = "czwarty",
+	[5] = "piąty",
+	[6] = "szósty",
+	[7] = "siódmy",
+	[8] = "ósmy",
+	[9] = "dziewiąty",
+	[10] = "dziesiąty",
+	[11] = "jedenasty",
+	[12] = "dwunasty",
 
 }
 
@@ -250,19 +250,19 @@ module.gui.results = {
 
 module.gui.menu = {
 	
-	["Codes"] = "Code entry",
-	["Feedback"] = "Send game feedback",
-	["Language"] = "Change game language",
-	["Music"] = "Music Jukebox",
-	["RaceResults"] = "Last race results",
-	["ServerSettings"] = "Tower Settings (Custom Tower)",
-	["Settings"] = "Game settings",
-	["Shop"] = "Buy game passes and tokens",
-	["Spectate"] = "Spectate other players",
-	["Stats"] = "Your badges and achievements",
-	["SwitchServer"] = "Switch Tower",
-	["Tokens"] = "Your tokens",
-	["Tutorial"] = "Play the Tutorial",
+	["Codes"] = "WPISANIE KODU",
+	["Feedback"] = "WYŚLIJ INFORMACJĘ ZWRTONĄ",
+	["Language"] = "ZMIEN JĘZYK GRY",
+	["Music"] = "SZAFA GRAJĄCA",
+	["RaceResults"] = "WYNIKI OSTATNIEGO WYŚCIGU",
+	["ServerSettings"] = "OPCJE WIEŻY",
+	["Settings"] = "OPCJE GRY",
+	["Shop"] = "KUP PRZEPUSTKI I TOKENY",
+	["Spectate"] = "OGLĄDAJ INNYCH GRACZY",
+	["Stats"] = "TWOJE ODZNAKI I OSIĄGNIĘCIA",
+	["SwitchServer"] = "ZMIEŃ WIEŻĘ",
+	["Tokens"] = "TWOJE TOKENY",
+	["Tutorial"] = "ZAGRAJ W SAMOUCZEK",
 
 }
 
@@ -270,9 +270,9 @@ module.gui.menu = {
 --end screen tutorial
 module.gui.tutorial = {
 	
-	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment!",
-	["difficulty"] = "Difficulty:",
+	["complete"] = "WSPINACZKA SKOŃCZONA",
+	["choose"] = "Proszę wybierz swoją pierwszą klasę",
+	["difficulty"] = "Trudność:",
 	
 }
 
@@ -504,14 +504,14 @@ module.spells.names = {
 }
 
 -- common description stuff
-local union = "This is a timed Ghost Union spell. Once in Ghost Union Mode, you can clip through blocking stairs and walk on ghost, obby, and fake stairs. Special stairs will have no effect on you, and you will not trigger rigs. However, you cannot cast spells in this mode."
-local overload = "This is an Overload spell. It will grant you one Mana every 6 seconds for the next minute (10 in total). You can have only one overload active at a time."
-local timed = "This spell is timed. "  -- do not remove space
-local rig = "This is a Rig spell. It will Rig all normal stairs, one by one, with " -- do not remove space
-local event = "This is an Event spell. It will affect all normal stairs with " -- do not remove space
-local fill = "This is a Fill spell. It will create stairs in every empty uncursed intersection in a random direction. " -- do not remove spaces
-local mode = "This is a Drone spell. It will change the drone mode to %s. In this mode drones will cast randomly either %s or %s on normal stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively."
-local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this spell will also refill Mana for all %s with at least %s Rank." -- do not remove leading space
+local union = "To jest zaklęcie Połączenia z Duchem. Jak wejdziesz w tryb połączenia z duchem, będzie mógł przejść przez blokujące schody i przejść po duchowych, obby, i schody oszusta. Specjalne schody nie będą miały na ciebie efektu, i nie będziesz aktywował rig'ów. Lecz, nie możesz rzucać zaklęć w tym trybie."
+local overload = "To jest zaklęcie Wypełnienia Many. Dzięki temu dostaniesz jedną manę co 6 sekund przez następną minutę. Możesz aktywowac tylko jeden na raz."
+local timed = "Te zaklęcie jest czasowe. "  -- do not remove space
+local rig = "To jest zaklęcie Rig. Będzie Rigował każde schody, jeden po jednym, z " -- do not remove space
+local event = "To jest zaklęcie wydarzenia. Będzie dawało każdemu normalnemu schodowi efekt " -- do not remove space
+local fill = "To jest zaklęcie wypełniające. Pozwala tworzyć schody. " -- do not remove spaces
+local mode = "To jest zaklęcie dronów. Zmienia Dron w tryb %s. w tym trybie drony będą rzucać %s lub %s na normalne schody. Specjalne schody będą zamiast tego przywrócone."
+local timedExtra = " Awansuj do %s żeby zwiększy limit do 90s. Rzucenie tego zaklęcie też wypełni manę dla każego %s z chociaż %s." -- do not remove leading space
 
 module.spells.descriptions = {
 
@@ -754,7 +754,7 @@ module.spells.descriptions = {
 	["chameleonunion"] = union,
 
 	--NEW
-	["share"] = "With this spell you can share Your own Mana with a nearby player. You can only share one Mana at a time, and you must have two Mana minimum to do this.",
+	["share"] = "Z tym zaklęciem możesz dać komuś manę. Musisz mieć chociaż 2 many żeby to zrobić.",
 
 	--ARCHITECT
 	["archpatron"] = "This spell used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
@@ -774,12 +774,12 @@ module.spells.descriptions = {
 
 }
 local CommonPerksInsertALignment = {
-	[1] = "This is Your starter %s rank.",
-	[2] = "You will get bonus Mana when drones are in %s mode.",
+	[1] = "To jest twoja startowa %s ranga.",
+	[2] = "Dostaniesz bonusową manę jeżeli drony są w trybie %s.",
 }
 local CommonPerksInsertTimedSpell = {
-	[3] = "If someone casts a %s spell, your Mana will be refilled.",
-	[7] = "Your %s spell will last 50%% longer (90s).",
+	[3] = "Jeśli ktoś rzuci zaklęcie %s , twoja mana się wypełni.",
+	[7] = "Twoje zaklęcie %s będzie trwało 50%% dłużej (90s).",
 }
 
 
@@ -963,16 +963,16 @@ module.gui.ranks = {
 
 module.gui.multitokens = {
 
-	["info"] = "You need 3 tokens to unlock a spell.",
+	["info"] = "Potrzebujesz 3 Tokenów żeby odblokować to zaklęcie",
 
 }
 
 module.gui.feedback = {
 	
-	["title"] = "SEND FEEDBACK",
-	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
-	["send"] = "SEND",
-	["locked"] = "LOCKED",
+	["title"] = "WYŚLIJ WIADOMOŚĆ ZWROTNĄ",
+	["prompt"] = "Kliknij tutaj, żeby wysłać wiadomość dla deweloperów! (20 znaków minimum)",
+	["send"] = "WYŚLIJ",
+	["locked"] = "ZABLOKOWANE",
 
 }
 
@@ -1843,8 +1843,8 @@ module.serverfeedback = {
 	["norace"] = "Race is automatic in the infinite mode.",
 
 	--misc
-	["secret"] = "Secret found!",
-	["unlocked"] = "Spell unlocked!",
+	["secret"] = "Sekret Znaleziony!",
+	["unlocked"] = "Zaklęcie Odblokowane!",
 
 	--chameleon exceptions	
 	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
@@ -1879,8 +1879,8 @@ module.serverfeedback = {
 
 
 	["used"] = "Code has been used already.",
-	["tooshort"] = "Your message was too short and not sent.",
-	["sent"] = "Your message was sent successfully, thank you.",
+	["tooshort"] = "Twoja wiadomość nie została wysłana bo była za krótka.",
+	["sent"] = "Twoja wiadomość została wysłana.",
 	
 	--NEW
 	['noobteleport'] = "You cannot switch towers in the tutorial!",
@@ -2004,7 +2004,7 @@ module.localfeedback = {
 	["nounion"] = "You can't use Ghost Union right now.",
 	
 	--NEW
-	["failedjoin"] = "Failed to join the race.",
+	["failedjoin"] = "Błąd dołączenia do wyścigu.",
 	--END NEW
 
 }
@@ -2045,7 +2045,7 @@ module.switchoff = {
 }
 --END NEW
 
-local timedSpell = "%s just cast the %s spell!"
+local timedSpell = "%s użył zaklęcia %s"
 
 module.timedspells = {}
 
@@ -2185,7 +2185,7 @@ module.gui.gameover.extras = {
 	--NEW
 	["reflected"] = "Let me out!",
 	--END NEW
-	["new"] = "New rank acquired - %s",
+	["new"] = "Awans - %s",
 
 }
 
