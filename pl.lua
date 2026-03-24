@@ -20,56 +20,56 @@ module.gui.basic = {
 module.gui.switcher = {
 
 	["join"] = "DOŁĄCZ",
-	["friends"] = "FRIENDS ONLINE",
-	["refresh"] = "refreshing...",
-	["fail"] = "FAILED TO REFRESH!",
+	["friends"] = "PRZYJACIELE ONLINE",
+	["refresh"] = "odświeżanie",
+	["fail"] = "NIEUDANA PRÓBA ODŚWIEŻANIA!",
 
 	--NEW
-	["refreshbutton"] = "REFRESH",
-	["failed"] = "Teleport failed!",
-	["classic"] = "Classic Tower",
-	["pro"] = "Pro Tower",
-	["custom"] = "Custom Tower",
-	["noVR"] = "VR Free Tower",
+	["refreshbutton"] = "ODŚWIEŻ",
+	["failed"] = "TELEPORT NIE POWIÓDŁ SIĘ",
+	["classic"] = "Klasyczna Wieża",
+	["pro"] = "Wieża Pro",
+	["custom"] = "Własna Wieża",
+	["noVR"] = "Wieża Bez VR",
 	--END NEW
 
 }
 
 module.gui.serversettings = {
 
-	["Drones"] = "DRONE SETTINGS",
-	["DronesReadOnly"] = "DRONE SETTINGS (read only)",
-	["DroneEnabled"] = "Drones enabled",
-	["DroneFix"] = "Drones restore stairs",
-	["DroneRemove"] = "Drones remove cursed intersections",
-	["DroneUnCurse"] = "Drones restore cursed stairs",
-	["DroneMove"] = "Drones move stairs in default mode",
-	["DroneSpin"] = "Drones spin stairs in default mode",
-	["DroneSpeed"] = "Drone travel speed (level/second)",
-	["DroneDelay"] = "Drone spin duration (seconds)",
-	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
-	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
-	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
-	["DroneCurse"] = "Cursed stairs chance for creation and normal stairs encounter (percent)",
+	["Drones"] = "OPCJE DRONÓW",
+	["DronesReadOnly"] = "OPCJE DRONÓW (tylko do odczytu)",
+	["DroneEnabled"] = "Drony włączone",
+	["DroneFix"] = "Drony przywracają schody",
+	["DroneRemove"] = "Drony usuwają przeklęte intersekcje",
+	["DroneUnCurse"] = "Drony przywracają przeklęte schody",
+	["DroneMove"] = "Drony ruszają schody",
+	["DroneSpin"] = "Drones obracają schody",
+	["DroneSpeed"] = "Szybkość drona (poziom/sekunda)",
+	["DroneDelay"] = "Długość obrotu drona (sekundy)",
+	["DroneMax"] = "Maksymalna ilość schodów (drony będą tylko niszczyć powyżej tego limitu)",
+	["DroneMin"] = "Minimalna ilość schodów (drony będą tylko tworzyć schody poniżej tego limitu)",
+	["DroneBlock"] = "Szansa na przeklętą intersekcję (procent)",
+	["DroneCurse"] = "Szansa na przeklęte schody (procent)",
 
-	["Tower"] = "TOWER SETTINGS",
-	["TowerReadOnly"] = "TOWER SETTINGS (read only)",
-	["InfMode"] = "Infinite Mode (cannot be changed during a race or a regeneration)",
-	["CasualPlayers"] = "Casual players allowed to cast spells",
-	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
-	["EvenLevels"] = "Even Levels Restricted",
-	["OrbMoves"] = "Endgame orb changes position",
+	["Tower"] = "OPCJE WIEŻY",
+	["TowerReadOnly"] = "OPCJE WIEŻY (tylko do odczytu)",
+	["InfMode"] = "Tryb Nieskończony",
+	["CasualPlayers"] = "Możliwość używania zaklęć poza wyścigiem",
+	["Regeneration"] = "Auto regeneracja schodów (na przykład po Totalnym Niszczeniu Wicked'a),
+	["EvenLevels"] = "Ograniczenie parzystych poziomów",
+	["OrbMoves"] = "Cel zmienia pozycję",
 	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
 	--deprecated
-	--["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
-	["TowerSize"] = "Tower grid size (experimental)",
-	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
-	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
-	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
-	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
+	--["TowerLevels"] = "Ilość Poziomów", -- SLEAZEL CO TY ROBISZ
+	["TowerSize"] = "Rozmiar Wieży (eksperymentalne)",
+	["RaceDuration"] = "Najdłuższy czas wyścigu (sekundy)",
+	["InfStart"] = "Interwał trybu nieskończonego (2 poziomy są tworzone co rundę) (sekundy)",
+	["InfReduction"] = "Skrócenie Interwału (każda runda jest krótsza o) (sekundy)",
+	["InfMin"] = "Najkrótszy czas interwału trybu nieskończonego (sekundy)",
 
 	--NEW KEY
-	["CooldownTime"] = "Event and Rig cool down period (seconds)",
+	["CooldownTime"] = "Czas odnowienia w tej wieży (sekundy)",
 	--END NEW
 
 }
@@ -78,26 +78,26 @@ module.gui.serversettings = {
 module.gui.shop = {
 
 	--NEW
-	["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.",
+	["architect"] = "Ta przepustka pozwala na używanie klasy (Architect) bez posiadania VR",
 	--END NEW
 
-	["chameleon"] = "Chameleons can change alignment during climb.",
-	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
-	["mana"] = "Expand your Mana storage capacity by 10 points.",
+	["chameleon"] = "Klasa (Chameleon) może zmienić klasę w czasie wspinania",
+	["spectre"] = "(Spectre) to klasa bazowana na teleportowaniu się i jest najlepsza do gry solo",
+	["mana"] = "Dodaj 10 do maksymalnej ilości many",
 
-	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
-	["30tokens"] = "Unlock ten spells or cast up to 30 ultimate spells.",
-	["300tokens"] = "Enough to unlock all spells with 93 tokens left.",
+	["3tokens"] = "Odblokuj 3 tokeny",
+	["30tokens"] = "Odblokuj 10 tokenów",
+	["300tokens"] = "Odblokuj wszystkie zaklęcia (i wciąż będziesz miał 93!)",
 
-	["3TOKENS"] = "3 Multi Tokens (R$%d)",
-	["30TOKENS"] = "30 Multi Tokens (R$%d)",
-	["300TOKENS"] = "300 Multi Tokens (R$%d)",
+	["3TOKENS"] = "3 Tokeny (R$%d)",
+	["30TOKENS"] = "30 Tokenów (R$%d)",
+	["300TOKENS"] = "300 Tokenów (R$%d)",
 
 	--NEW
-	["SPECTRE"] = "Spectre game pass (R$%d)",
-	["MANA"] = "20 Mana Storage game pass (R$%d)",
-	["CHAMELEON"] = "Chameleon game pass (R$%d)",
-	["ARCHITECT"] = "Architect game pass (R$%d)",
+	["SPECTRE"] = "Przepustka Spectre (R$%d)",
+	["MANA"] = "Przepustka 20 many (R$%d)",
+	["CHAMELEON"] = "Przepustka Chameleon (R$%d)",
+	["ARCHITECT"] = "Przepustka Architect (R$%d)",
 
 	--END NEW
 
@@ -106,11 +106,11 @@ module.gui.shop = {
 
 module.gui.nospellsbar = {
 
-	["nocasual"] = "ONLY RACERS CAN CAST SPELLS",
-	["possessed"] = "POSSESSED! (Find Mana to break free)",
+	["nocasual"] = "TYLKO LUDZIE W WYŚCIGU MOGĄ RZUCAĆ ZAKLĘCIA",
+	["possessed"] = "ZOSTAŁEŚ OPĘTANY! (znajdź manę żeby się wydostac z tego stanu)",
 	--NEW
-	["permanent"] = "POSSESSED! (permanent mode)",
-	["cancelled"] = "CANCELLED...", --timed spell cancelled
+	["permanent"] = "ZOSTAŁEŚ OPĘTANY! (na zawsze LOL)",
+	["cancelled"] = "ODWOŁANY...", --timed spell cancelled
 	--END NEW
 
 }
@@ -118,10 +118,10 @@ module.gui.nospellsbar = {
 --NEW
 module.gui.stats = {
 
-	["badges"] = "YOUR BADGES",
-	["climbs"] = "YOUR CLIMBS",
-	["total"] = "TOTAL CLIMBS/WINS",
-	["best"] = "BEST TIME OVERALL",
+	["badges"] = "TWOJE ODZNAKI",
+	["climbs"] = "TWOJA ILOŚĆ WSPIĘĆ",
+	["total"] = "TWOJA ILOŚĆ WYGRANYCH",
+	["best"] = "NAJLEPSZY CZAS",
 	["norecord"] = "[no record]",
 
 	["2124486274"] = "Prank the Creator",
@@ -473,7 +473,7 @@ module.spells.names = {
 	["warp"] = "Zniekształć Schody",
 	["chamdown"] = "Rusz Schody Do Dołu",
 	["chamdraw"] = "Stwórz Dolny Most",
-	--["chamswap"] = "Copy Ghost (visual)", SLEAZEL NIE CHOWAJ SEKRETÓW ODE MNIE!!!!!!!!!!!!
+	--["chamswap"] = "Copy Ghost (visual)", -- SLEAZEL NIE CHOWAJ SEKRETÓW ODE MNIE!!!!!!!!!!!!
 	["chamdrawabove"] = "Stwórz Górny Most",
 	["oneways"] = "Stwórz Schody Tylko w Jedną Stronę",
 
