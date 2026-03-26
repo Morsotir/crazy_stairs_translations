@@ -376,12 +376,12 @@ module.spells.names = {
 	["thiefaltevent"] = "Mega Przejście",
 
 	--ARCHON
-	["splitup"] = "Stwórz Bramę do Góry",
-	["splitrotate"] = "Stwórz Bramę w Prawo/Lewo",
-	["splitside"] = "Stwórz Bramę do Przodu/Tyłu",
-	["splitrandom"] = "Stwórz Losową Bramę",
-	["cancelsplit"] = "Zniszcz Bramę",
-	["splitforward"] = "Stwórz Bramę na Platformie",
+	["splitup"] = "Stwórz Portal do Góry",
+	["splitrotate"] = "Stwórz Portal w Prawo/Lewo",
+	["splitside"] = "Stwórz Portal do Przodu/Tyłu",
+	["splitrandom"] = "Stwórz Losowy Portal",
+	["cancelsplit"] = "Zniszcz Portal",
+	["splitforward"] = "Stwórz Portal na Platformie",
 
 	["splitter"] = "Mania Portali",
 	["archonevent"] = "Brama-1",
@@ -475,29 +475,29 @@ module.spells.names = {
 	["chamdraw"] = "Stwórz Dolny Most",
 	--["chamswap"] = "Copy Ghost (visual)", -- SLEAZEL NIE CHOWAJ SEKRETÓW ODE MNIE!!!!!!!!!!!!
 	["chamdrawabove"] = "Stwórz Górny Most",
-	["oneways"] = "Stwórz Schody Tylko w Jedną Stronę",
+	["oneways"] = "Stwórz Jednostronne Schody",
 
 	--NEW
 
-	["mugglereg"] = "Staircase is regenerating",
-	["mugglecd"] = "Events and Rigs Cooldown",
-	["share"] = "Share mana (requires 2 Mana minimum)",
+	["mugglereg"] = "Schody się Regenerują",
+	["mugglecd"] = "Czas Odnowienia Wydarzeń",
+	["share"] = "Podziel się Maną",
 
 	--ARCHITECT
-	["archpatron"] = "Create or shrink",
-	["archarchon"] = "Gate stairs or platform",
-	["archthief"] = "Steal or place",
-	["archnecro"] = "Dual or Undead stairs",
-	["archhacker"] = "Escalator or Hack-in",
-	["archkeeper"] = "Move or Restore",
-	["archsplicer"] = "Splice or Split",
-	["archwicked"] = "Wall or Destroy",
-	["archgremlin"] = "Revolve stairs or a platform",
-	["archjoker"] = "Fake or Flip stairs",
-	["archdrifter"] = "Drift or Elevator",
-	["archspectre"] = "Phantom or Ghost stairs",
-	["archreaver"] = "Mirrored or One-way stairs",
-	["archheretic"] = "Curse intersection or stairs",
+	["archpatron"] = "Stwórz lub Zmniejsz",
+	["archarchon"] = "Stwórz Portal na schodach lub platformie",
+	["archthief"] = "Ukradnij lub postaw",
+	["archnecro"] = "Podwójne lub Nieumarłe Schody",
+	["archhacker"] = "Schody Ruchome lub Zhakuj",
+	["archkeeper"] = "Rusz lub Przywróć",
+	["archsplicer"] = "Zawiąż lub Podziel",
+	["archwicked"] = "Postaw Ścianę lub Zniszcz",
+	["archgremlin"] = "Okrąż schody lub platformę",
+	["archjoker"] = "Stwórz Schody Oszusta lub Wywróć schody",
+	["archdrifter"] = "Drift lub Winda",
+	["archspectre"] = "Fantomowe lub Duchowe Schody",
+	["archreaver"] = "Lustrzane lub Jednostronne Schody",
+	["archheretic"] = "Przeklnij intersekcję lub schody",
 
 	--END NEW
 
@@ -786,12 +786,12 @@ local CommonPerksInsertTimedSpell = {
 
 module.gui.ranks = {
 
-	["title"] = "YOUR RANK",
+	["title"] = "TWOJA RANGA",
 
 	--none
 
-	["none_1"] = "You have not chosen an alignment!",
-	["none_2"] = "To cast spells, you MUST pick a class!",
+	["none_1"] = "Nie wybrałeś Klasy!",
+	["none_2"] = "Żeby rzucać zaklęcia, musisz wybrać Klasę!",
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
@@ -816,14 +816,14 @@ module.gui.ranks = {
 	--END NEW
 
 	--shared
-	["higher"] = "HIGHER RANK ACQUIRED",
-	["current"] = "YOUR CURRENT RANK",
-	["lower"] = "RANK NOT ACQUIRED",
+	["higher"] = "MASZ JUŻ WYŻSZĄ RANGĘ",
+	["current"] = "TWOJA OBECNA RANGA",
+	["lower"] = "NIE MASZ TEJ RANGI",
 
-	["more"] = "You need %d more climbs as %s to obtain this rank.",
-	["done"] = "You already own a higher rank. All lower rank effects add up to the current rank.",
-	["max"] = "This is the maximum rank. You have made %d climbs as %s.",
-	["next"] = "Click on the right arrow to check requirements for the next rank.",
+	["more"] = "Potrzebujesz %d więcej wspinaczek jako %s żeby otrzymać tą rangę",
+	["done"] = "Masz już rangę wyższą niż ta. Wszystkie efekty z niższych rang działają na wyższych rangach.",
+	["max"] = "To jest maksymalna ranga. Masz %d wspinaczek jako %s.",
+	["next"] = "Kliknij na strzałkę po prawej, żeby sprawdzić wymagania do następnej rangi.",
 
 	["PATRON"] = {
 		[4] = "Your links will last twice as long (120s).",
@@ -980,29 +980,29 @@ module.gui.settings = {
 
 	--NEW
 
-	["Gameplay"] = "GAMEPLAY SETTINGS",
-	["Interface"] = "INTERFACE SETTINGS",
+	["Gameplay"] = "OPCJE GRY",
+	["Interface"] = "OPCJE INTERFEJSU",
 
-	["Billboard"] = "Show Your own avatar billboard",
-	["Rank"] = "Show Your Overall Rank in the avatar billboard",
-	["Morph"] = "Show the morph animation when using Chameleon ranked up to Deceiver or higher",
-	["ManaLimit"] = "Reduce Your own Mana capacity for an extra challenge",
+	["Billboard"] = "Pokaż bilboard awatara",
+	["Rank"] = "Pokaz twoją rangę na bilboardzie avatara",
+	["Morph"] = "Pokaż animację morfa kiedy używasz klasy Chameleon z rangą Deceiver lub wyższą",
+	["ManaLimit"] = "Zmniejsz swoją maksymalną ilość many",
 
-	["KChoices"] = "Show direction selection for Keeper, when using move spells",
-	["HChoices"] = "Show direction selection for Hacker, when using the escalator spell",
-	["AChoices"] = "Show direction selection for Archon, when using gate spells",
-	["SChoices"] = "Show direction selection for Splicer, when using splice spells",
-	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell",
+	["KChoices"] = "Pokaż kierunki dla Keeper'a, kiedy używasz zaklęć ruszania",
+	["HChoices"] = "Pokaż kierunki dla Hacker'a,kiedy używasz zaklęcia schodów ruchomych",
+	["AChoices"] = "Pokaż kierunki dla Archon'a, kiedy używasz portali",
+	["SChoices"] = "Pokaż kierunki dla Splicer'a, kiedy używasz zaklęć zawiązania",
+	["GChoices"] = "Pokaż kierunki dla Gremlin'a, kiedy używasz zaklęcia okrążania platformy",
 	--new
-	["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell",
+	["CChoices"] = "Podaj kierunki dla Chameleon'a, kiedy używasz zaklęcia jednostronnych schodów",
 	--endnew
 
 
-	["List"] = "Show animated playerlist rather than standard Roblox Leaderboard",
-	["SwitchBack"] = "Auto switch back to basic spells after an executed ultimate spell",
-	["SafeCancel"] = "Show confirmation window when cancelling a timed ultimate spell",
-	["Multi"] = "Show Multi Token window selection after the climb, when you still have unspent MultiTokens",
-	["UISize"] = "Adjust the maximum width of the User Interface (%)"
+	["List"] = "Pokaż animowaną listę graczy",
+	["SwitchBack"] = "Automatycznie zmień zaklęcia na normalne po użyciu ultimate zaklęcia", -- popraw to pls
+	["SafeCancel"] = "Pokaż okno potwierdzania do czasowych ultimate zaklęć", --też to
+	["Multi"] = "Pokaż ilość tokenów",
+	["UISize"] = "Zmień szerokość menu (%)"
 	--END NEW
 
 }
@@ -1011,27 +1011,27 @@ module.gui.gameover = {}
 
 module.gui.gameover.results = {
 
-	["class"] = "YOUR ALIGNMENT",
-	["time"] = "YOUR CLIMB TIME",
-	["climbs"] = "CLIMBS AWARDED",
-	["tokens"] = "TOKENS AWARDED",
-	["rank"] = "YOUR CURRENT RANK",
+	["class"] = "TWOJA KLASA",
+	["time"] = "TWÓJA CZAS WSPINACZKI",
+	["climbs"] = "ILOŚĆ WSPINACZEK NAGRODZONYCH",
+	["tokens"] = "ILOŚĆ TOKENÓW NAGRODZONYCH",
+	["rank"] = "TWOJA RANGA",
 
 	--NEW
-	["role"] = "YOUR OVERALL RANK",
-	["classic"] = "CLASSIC TOWER RECORD",	
-	["pro"] = "PRO TOWER RECORD",	
-	["infinite"] = "INFINITE TOWER RECORD",
-	["custom"] = "CUSTOM TOWER RECORD", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
-	["noVR"] = "CLASSIC TOWER RECORD", --this will show in noVR tower, as they share the same record
+	["role"] = "TWOJA ZWYKŁA RANGA",
+	["classic"] = "TWÓJ REKORD",	
+	["pro"] = "TWÓJ PRO REKORD",	
+	["infinite"] = "TWÓJ NIESKOŃCZONY REKORD",
+	["custom"] = "TWÓJ WŁASNY REKORD", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
+	["noVR"] = "TWÓJ REKORD", --this will show in noVR tower, as they share the same record
 
-	["cTime"] = "%s RECORD", --%s will be replaced by the used class
-	["levels"] = "LEVELS REACHED",
-	["cClimbs"]	= "%s CLIMBS", --%s will be replaced by the used class
-	["tClimbs"] = "TOTAL CLIMBS",
-	["tTokens"] = "%s TOKENS",	--%s will be replaced by the used class	(or multi)
-	["spells"] = "SPELLS USED",	--amount
-	["rRank"] = "RACE PLACEMENT",--if any
+	["cTime"] = "%s REKORD", --%s will be replaced by the used class
+	["levels"] = "ILOŚĆ POZIOMÓW ZDOBYTYCH",
+	["cClimbs"]	= "%s WSPINACZKI", --%s will be replaced by the used class
+	["tClimbs"] = "ILOŚĆ WSPINACZEK",
+	["tTokens"] = "%s TOKENY",	--%s will be replaced by the used class	(or multi)
+	["spells"] = "ILOŚĆ UŻYTYCH ZAKLĘĆ",	--amount
+	["rRank"] = "POZYCJA W WYŚCIGU",--if any
 	--END NEW
 
 }
@@ -1260,26 +1260,26 @@ module.gui.gameover.credits = {
 
 	["common"] = {
 		"CRAZY STAIRS",
-		"Game conceptualized, designed and scripted by Sleazel",
+		"Gra Zrobiona Całkowicie przez gracza Sleazel",
 		"Help with design - cakegirlserina",
 		"Models by ZielonyLeszek",
 		"Skyboxes by @wwwtyro's generator",
 		"Datastore module, ProfileStore, by loleris",
-		"Thanks for playing!",	
+		"Thanks for playing!",	-- FOR SLEAZEL PLS ADD ME IN CREDITS AS A TRANSLATOR
 	},
 	["climb"] = "%s Climb Music - % by %",
 	["endgame"] = "%s Endgame Music - % by %",
 	["disco"] = "Disco stairs music - % by %",
 	["elevator"] = "Elevator music - % by %", --drifter platforms
-	["testers"] = "TESTERS:",
-	["thanks"] = "SPECIAL THANKS:",
+	["testers"] = "TESTERZY:",
+	["thanks"] = "PODZIĘKOWANIA:",
 
 }
 
 module.static = {
 
-	["cla_1"] = "How do I play?",
-	["cla_2"] = "First, it is highly recommended to complete the tutorial. If you haven't done so, please rejoin the game, as the experience could get really confusing otherwise.",
+	["cla_1"] = "Jak Grać>",
+	["cla_2"] = "Najpierw powinieneś przejść samouczek. Jeżeli nie przeszłeś go, dołącz ponownie do gry.",
 	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
 	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
 	["cla_5"] = "How do I cast spells?",
@@ -1291,7 +1291,7 @@ module.static = {
 	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
-	["pro_1"] = "PRO TOWER",
+	["pro_1"] = "WIEŻA PRO",
 	["pro_2"] = "Even levels restrictions",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
@@ -1304,7 +1304,7 @@ module.static = {
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
 	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
-	["inf_1"] = "INFINITE TOWER",
+	["inf_1"] = "NIESKOŃCZONA WIEŻĄ",
 	["inf_2"] = "RACE MANDATORY",
 	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
@@ -1317,8 +1317,8 @@ module.static = {
 	["inf_11"] = "Much like Fallen Drone, eraser will speed up. It will however raise steadily, rather than removing 2 levels at the same time.",
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
 
-	["cus_1"] = "CUSTOM TOWER",
-	["cus_2"] = "YOU DECIDE!",
+	["cus_1"] = "WŁASNA WIEŻA",
+	["cus_2"] = "TY DECYDUJESZ",
 	["cus_3"] = "In custom tower you can adjust any tower settings to your liking.",
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
 	["cus_5"] = "Tower Settings",
@@ -1341,7 +1341,7 @@ module.static = {
 
 	["home_1"] = "MUGGLE'S HOME",
 	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
-	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nNo spells\nGets stuck easily",
+	["home_3"] = "PROS:\nBonusy do prędkości i skoku na wyższych rangach\nMoc Błagania do Ludzi\nCONS:\nNIE MA ZAKLĘĆ\nMa Zawsze Problem",
 	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
 
 	["oasis_1"] = "CHAMELEON'S OASIS",
@@ -1659,11 +1659,11 @@ module.guide = {
 	},
 
 	['anywhere'] = {
-		['anywhere'] = "This spell can be executed anywhere.",
+		['anywhere'] = "Te zaklęcie można wykonać wszędzie.",
 	},
 
 	["nowhere"] = {
-		['slide'] = "This spell does not require an execution.",
+		['slide'] = "Tego zaklęcia nie trzeba rzucać",
 
 	},
 
@@ -1672,27 +1672,27 @@ module.guide = {
 
 
 module.spells.manacosts = {
-	"0 Mana",
+	"0 Many",
 	"1 Mana",
-	"2 Mana",
-	"3 Mana",
-	"4 Mana", 
-	"0 Mana + stairs",
-	"1 Mana + stairs",
-	"2 Mana + stairs",
-	"3 Mana + stairs", 
+	"2 Many",
+	"3 Many",
+	"4 Many", 
+	"0 Many + schody",
+	"1 Mana + schody",
+	"2 Many + schody",
+	"3 Many + schody", 
 	"", 
-	"10 Mana" 
+	"10 Many" 
 }
 
 module.spells.tokencosts = {
 
 	"1 Token",
-	"2 Tokens",
-	"3 Tokens",
+	"2 Tokeny",
+	"3 Tokeny",
 
-	["chameleonrigevent"] = "2 Multi Tokens",
-	["unlock"] = "(unlock for 3 tokens)",
+	["chameleonrigevent"] = "2 Tokeny",
+	["unlock"] = "(odblokuj za 3 Tokeny)",
 }
 
 module.serverfeedback = {
@@ -1945,12 +1945,12 @@ module.serverfeedback = {
 }
 
 module.serverbroadcast = {
-	["pranked"] = "%s pranked %s!",
-	["found"] = "%s has found %s's invisible stairs!",
-	["disco"] = "%s is enjoying %s's disco music.",
-	["trap"] = "%s has fallen for %s's trap.",
-	["obby"] = "%s is attempting %s's obby.",
-	["default"] = "Drones are now back in the default mode.",
+	["pranked"] = "%s sprankował %s!",
+	["found"] = "%s znalazł niewidzialne schody %s'a!",
+	["disco"] = "%s lubi muzyke disco %s'a",
+	["trap"] = "%s dał sie nabrać na pułapkę %s'a.",
+	["obby"] = "%s próbuje przejść obby %s'a.",
+	["default"] = "Drony są teraz w trybie głównym.",
 	["reg"] = "Staircase is regenerating.",
 	["done"] = "Staircase regeneration complete.",
 	["union"] = "%s has merged with their ghost!",
@@ -1959,19 +1959,19 @@ module.serverbroadcast = {
 	--["falsestart"] = "False Start", --removed
 	--["countdown"] = "Race in %d seconds!", --removed
 	--["noplayers"] = "No racing players, infinite mode will not start!", --removed
-	["nojoin"] = "Race is now closed - no new players can join.",
+	["nojoin"] = "Wyścig jest zamknięty - Nikt nie może do niego dołączyć.",
 	--["allfalse"] = "All players have False Started!", --removed
-	["safety"] = "Tower levels have changed, this race will not start.",
-	["leader"] = "%s has taken the lead!",
-	["toolate"] = "Nobody has reached the top in time!",
+	["safety"] = "Poziomy Wieży zostały zmienione. Wyścig się nie zacznie.",
+	["leader"] = "%s Jest Na Pierwszym Miejscu!",
+	["toolate"] = "Nikt nie dotarł na samą górę!",
 	--["go"] = "GO!", --removed
-	["over"] = "Race over!",
+	["over"] = "Wyścig zakończony!",
 
 	--NEW
 	["newrace"] = "%s initiated a race - join them!",
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
-	["infstart"] = "Infinite race started!",
+	["infstart"] = "Nieskończony wyścig się zaczął!",
 	
 	--END NEW
 
@@ -2108,7 +2108,7 @@ module.eventspells = {
 	["reaverevent"] = "%s has just turned all normal stairs into random One-Ways!",
 	["reaveraltevent"] = "%s has turned all normal stairs into Glass Stairs!",
 
-	["newmode"] = "%s has just switched drones into %s mode!",
+	["newmode"] = "%s zmienił drony w tryb %s !",
 
 	["chameleonrigevent"] = "%s has just rigged all normal stairs with a Mystery spell!"
 }
@@ -2138,14 +2138,14 @@ module.spells.extras = {
 module.gui.mana = {
 
 	["mana"] = "MANA", --main name
-	["ghost"] = "GHOST",
-	["spirit"] = "SPIRIT", --only for spirit spectres
-	["welcome"] = "WELCOME",
-	["drones"] = "DRONES",
-	["orb"] = "ORB",
-	["refill"] = "REFILL", --for all 2nd rank bonuses
-	["overload"] = "OVERLOAD",
-	["steal"] = "STEAL",
+	["ghost"] = "DUCH",
+	["spirit"] = "DUCH", --only for spirit spectres
+	["welcome"] = "WITAM",
+	["drones"] = "DRONY",
+	["orb"] = "KULA", -- nie wiem co wsadzić
+	["refill"] = "PRZEŁADOWANIE", --for all 2nd rank bonuses
+	["overload"] = "WYPEŁNIENIE",
+	["steal"] = "KRADZIEŻ",
 	["gift"] = "GIFT",
 	["share"] = "SHARE",
 	["prank"] = "PRANK",
@@ -2172,7 +2172,7 @@ module.gui.mana = {
 	["shack"] = "SHACK",
 	["regen"] = "REGENERATE",
 	["optimus"] = "OPTIMUS",
-	["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial
+	["tutorial"] = "SAMOUCZEK",--player mana is drained upon starting tutorial
 
 }
 
@@ -2180,10 +2180,10 @@ module.gui.mana = {
 module.gui.gameover.extras = {
 
 	--["noobs"] = "Tutorials are for noobs!", --removed
-	["possessed"] = "Those annoying Heretics!",
-	["hypnotised"] = "Where am I?",
+	["possessed"] = "NIENAWIDZĘ HERETYKÓW",
+	["hypnotised"] = "Gdzie Ja Jestem?",
 	--NEW
-	["reflected"] = "Let me out!",
+	["reflected"] = "Dajcie mi wyjść!",
 	--END NEW
 	["new"] = "Awans - %s",
 
