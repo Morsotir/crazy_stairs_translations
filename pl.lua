@@ -135,7 +135,7 @@ module.gui.stats = {
 	["2124637293"] = "Połączenie Archon'a",
 	["2124517578"] = "Eksploit Hacker'a",
 	["707445818894757"] = "Spirala Gremlin'a",
-	["2124480171"] = "Duma Patron'a", -- nie rób żartów o gejach, nie rób żartów o gejach...
+	["2124480171"] = "Duma Patron'a",
 	["1407551481032773"] = "Refleksja Reaver'a",
 	["2124637295"] = "Przekleństwo Heretic'a",
 	["1885715582646280"] = "Rytuał Necromancer'a",
@@ -1261,16 +1261,16 @@ module.gui.gameover.credits = {
 	["common"] = {
 		"CRAZY STAIRS",
 		"Gra Zrobiona Całkowicie przez gracza Sleazel",
-		"Help with design - cakegirlserina",
-		"Models by ZielonyLeszek",
-		"Skyboxes by @wwwtyro's generator",
-		"Datastore module, ProfileStore, by loleris",
-		"Thanks for playing!",	-- FOR SLEAZEL PLS ADD ME IN CREDITS AS A TRANSLATOR
+		"Pomoc z wyglądem - cakegirlserina",
+		"Modele przez ZielonyLeszek",
+		"Niebo przez @wwwtyro's generator",
+		"Moduł danych, Sklep Profili, przez loleris",
+		"Dziękuję za zagranie w tą grę!",	-- FOR SLEAZEL PLS ADD ME IN CREDITS AS A TRANSLATOR
 	},
-	["climb"] = "%s Climb Music - % by %",
-	["endgame"] = "%s Endgame Music - % by %",
-	["disco"] = "Disco stairs music - % by %",
-	["elevator"] = "Elevator music - % by %", --drifter platforms
+	["climb"] = "%s Muzyka Wspinaczki - % przez %",
+	["endgame"] = "%s Endgame Music - % przez %",
+	["disco"] = "Muzyka Schodów Disco - % przez %",
+	["elevator"] = "Muzyka Windy - % przez %", --drifter platforms
 	["testers"] = "TESTERZY:",
 	["thanks"] = "PODZIĘKOWANIA:",
 
@@ -1304,7 +1304,7 @@ module.static = {
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
 	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
-	["inf_1"] = "NIESKOŃCZONA WIEŻĄ",
+	["inf_1"] = "NIESKOŃCZONA WIEŻA",
 	["inf_2"] = "RACE MANDATORY",
 	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
@@ -1339,88 +1339,88 @@ module.static = {
 	["vr_10"] = "Execute the spell with the trigger button, while still holding the grip button. Each alignment in VR has two spells. One platform and one stairs spell. Depending on the target, a proper spell will be chosen.",
 	["vr_11"] = "To change an alingment in the VR mode, press and hold the trigger button, without the grip button. You can then change alignment with the corresponding hand's thumbstick.",
 
-	["home_1"] = "MUGGLE'S HOME",
-	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
-	["home_3"] = "PROS:\nBonusy do prędkości i skoku na wyższych rangach\nMoc Błagania do Ludzi\nCONS:\nNIE MA ZAKLĘĆ\nMa Zawsze Problem",
-	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
+	["home_1"] = "DOM MUGGLE'A",
+	["home_2"] = "NASZE MOTTO:\nNIENAWIDZĘ\nTYCH\nZAKLĘĆ",
+	["home_3"] = "PLUSY:\nBonusy do prędkości i skoku na wyższych rangach\nMoc Błagania do Ludzi\nMINUSY:\nNIE MA ZAKLĘĆ\nMa Zawsze Problem",
+	["home_4"] = "'Nie mieliśmy tych zaklęć w alfie!'\ncytat naszego twórcy",
 
-	["oasis_1"] = "CHAMELEON'S OASIS",
+	["oasis_1"] = "OAZA CHAMELEON'A",
 	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
 
-	["nexus_1"] = "HERETIC'S NEXUS",
+	["nexus_1"] = "ZESPÓŁ HERETIC'A",
 	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
 
-	["guild_1"] = "THIEF'S GUILD",
+	["guild_1"] = "GILDIA THIEF'A",
 	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
-	["nether_1"] = "SPECTRE'S NETHER",
+	["nether_1"] = "PIEKŁO SPECTRE'A",
 	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
 	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
 	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
 
-	["study_1"] = "ARCHON'S STUDY",
+	["study_1"] = "UCZELNIA ARCHON'A",
 	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
 	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
 
-	["haven_1"] = "PATRON'S HAVEN",
+	["haven_1"] = "NIEBO PATRON'A",
 	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
 	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
 	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
 
-	["shelter_1"] = "DRIFTER'S SHELTER",
+	["shelter_1"] = "BUNKIER DRIFTER'A",
 	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
 	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
 	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
 
-	["circus_1"] = "JOKER'S CIRCUS",
+	["circus_1"] = "CYRK JOKER'A",
 	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
 	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
 
-	["base_1"] = "KEEPER'S BASE",
+	["base_1"] = "BAZA KEEPER'A",
 	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
 	["base_4"] = "'Stop messing up my staircase!'\nour founder's quote",
 
-	["chamber_1"] = "WICKED'S CHAMBER",
+	["chamber_1"] = "KOMNATA WICKED'A",
 	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
 	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\nour founder's quote",
 
-	["backdoor_1"] = "HACKER'S BACKDOOR",
+	["backdoor_1"] = "TYLNE DRZWI HACKER'A",
 	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
 	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
 	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
 
-	["hub_1"] = "SPLICER'S HUB",
+	["hub_1"] = "CENTRUM SPLICER'A",
 	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
 	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
 	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
 
-	["shack_1"] = "GREMLIN'S SHACK",
+	["shack_1"] = "CHATKA GREMLIN'A",
 	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTISE",
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
-	["mirror_1"] = "REAVER'S MIRROR",
+	["mirror_1"] = "LUSTRO REAVER'A",
 	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
 	["mirror_4"] = "'Mirrors are just doorways.'\nour founder's quote",
 
-	["grave_1"] = "NECROMANCER'S GRAVE",
+	["grave_1"] = "GRÓB NECROMANCER'A",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
 	["grave_4"] = "'We aren't actually haunting you, we just wanna be friends.'\nour founder's quote",
 
 	--NEW (architect)
-	["studio_1"] = "ARCHITECT'S STUDIO",
+	["studio_1"] = "STUDIO ARCHITECT'A",
 	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
 	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
 	["studio_4"] = "'Now I rule this staircase!'\nour founder's quote",
@@ -1428,10 +1428,10 @@ module.static = {
 
 	--SHARED
 	["leader_pro"] = "Pro Tower counts as 2 climbs",	
-	["leader_update"] = "Update in: ",	
-	["leader_updating"] = "Updating...",	
+	["leader_update"] = "AKTUALIZACJA ZA: ",	
+	["leader_updating"] = "AKTUALIZOWANIE...",	
 	["leader_rank"] = "RANK",
-	["leader_req"] = "CLIMBS REQ",
+	["leader_req"] = "WYMAGANE WSPIĘCIA",
 	["leader_off"] = "Custom tower does not support leaderboards.",
 
 	--OVERALL
