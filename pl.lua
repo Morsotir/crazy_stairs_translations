@@ -525,8 +525,8 @@ module.spells.descriptions = {
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
-	["patronevent"] = fill ..  "Created stairs will be normal.",
-	["patronaltevent"] = event .. "the Shrink spell.",
+	["patronevent"] = fill ..  "Stworzone schody będą normalne.",
+	["patronaltevent"] = event .. "zmniejszenia.",
 	["patronmode"] = string.format(mode,"Patron","Patron Rig","Shrink Spell"),
 	["patronrefill"] = overload,
 	["patronunion"] = union,
@@ -541,8 +541,8 @@ module.spells.descriptions = {
 
 	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
-	["jokerevent"] = event .. "the Invisiblity.",
-	["jokeraltevent"] = event .. "the Flip spell.",
+	["jokerevent"] = event .. "Stworzone schody będą niewidzialne.",
+	["jokeraltevent"] = event .. "wywrócenia",
 	["jokermode"] = string.format(mode,"Joker","Joker Rig","Invisible Spell"),
 	["jokerrefill"] = overload,
 	["jokerunion"] = union,
@@ -757,7 +757,7 @@ module.spells.descriptions = {
 	["share"] = "Z tym zaklęciem możesz dać komuś manę. Musisz mieć chociaż 2 many żeby to zrobić.",
 
 	--ARCHITECT
-	["archpatron"] = "This spell used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
+	["archpatron"] = "This spell when used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
 	["archarchon"] = "This spell when used on platform's arrows, will create a gate between platforms. When used on stairs, it will gate them in the direction of Your choice.",
 	["archthief"] = "This spell when used on platform's arrows, will place normal stairs. When used on normal or rigged stairs it will steal them.",
 	["archnecro"] = "This spell when used on platform's arrows, will create Dual stairs. When used on normal or rigged stairs, it will turn them into Undead Stairs.",
@@ -779,7 +779,7 @@ local CommonPerksInsertALignment = {
 }
 local CommonPerksInsertTimedSpell = {
 	[3] = "Jeśli ktoś rzuci zaklęcie %s , twoja mana się wypełni.",
-	[7] = "Twoje zaklęcie %s będzie trwało 50%% dłużej (90s).",
+	[7] = "Twoje zaklęcie %s będzie trwało 50% dłużej (90s).",
 }
 
 
@@ -794,25 +794,25 @@ module.gui.ranks = {
 	["none_2"] = "Żeby rzucać zaklęcia, musisz wybrać Klasę!",
 
 	--NEW
-	["possessed_1"] = "You have been Possessed!",
-	["possessed_3"] = "As Possessed, you cannot use spells, your rank perks are inactive and you cannot jump.",
+	["possessed_1"] = "Zostałeś Opętany!",
+	["possessed_3"] = "Jako Opętany, nie możesz używać zaklęć, twoja ranga nie działa i nie możesz skakać.",
 
-	["hypnotised_1"] = "You have been Hypnotised!",
-	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+	["hypnotised_1"] = "Zostałeś Zahipnotyzowany!",
+	["hypnotised_3"] = "Jako Zahipnotyzowany, twoje chodzenie jest odwrócone!",
 	
-	["reflected_1"] = "You have been Reflected!",
-	["reflected_3"] = "As Reflected, you control yourself from your ghost perspective!",
+	["reflected_1"] = "Zostałeś Odbity!",
+	["reflected_3"] = "Jako Odbity, kontrolujesz twojego ducha!",
 	
-	["findmana"] = "Find Mana or Patron Rig to break free.",
-	["permanent"] = "Permanent mode - Complete climb or visit sanctuary to de-morph.",
+	["findmana"] = "Znajdź manę lub Rig Patron'a żeby wyjść z obecnego stanu.",
+	["permanent"] = "Tryb Stały - Skończ wspinaczkę lub znajdź sanktuarium żeby wyjść z obecnego stanu.",
 
-	["architect_1"] = "You are now an Architect!",
+	["architect_1"] = "Jesteś Architect'em!",
 	["architect_2"] = "Architects cannot acquire any ranks.",
 	["architect_3"] = "Roam the tower to wreak havoc!",
 	
-	["tutorial_1"] = "You are in the tutorial!",
-	["tutorial_2"] = "Collect Mana and use spells to climb the tower.",
-	["tutorial_3"] = "Make sure to catch the White Orb at the top!",
+	["tutorial_1"] = "Jesteś w samouczku!",
+	["tutorial_2"] = "Zdobądź manę i użyj zaklęć żeby wspiąć się na górę wieży.",
+	["tutorial_3"] = "Zdobądź białą kulę na górze żeby wygrać!",
 	--END NEW
 
 	--shared
@@ -924,25 +924,25 @@ module.gui.ranks = {
 		[9] = "You can now control Corkscrew Stairs via a toggle. This may not work if there is another Daemon nearby.",
 	},
 	["MUGGLE"] = { 
-		[2] = "Your jump cooldown is reduced by 0.125s.",
-		[3] = "Your jump cooldown is reduced by 0.25s.",
-		[4] = "Your jump cooldown is reduced by 0.375s.",
-		[5] = "Your jump cooldown is reduced by 0.5s.",
-		[6] = "Your walkspeed is increased by 10%.",
-		[7] = "Your walkspeed is increased by 20%.",
-		[8] = "Your walkspeed is increased by 30%.",
-		[9] = "Your jump power is increased by 20%.",
+		[2] = "Twój czas odnowienia skoku jest krótszy o 0.125s.",
+		[3] = "Twój czas odnowienia skoku jest krótszy o 0.25s.",
+		[4] = "Twój czas odnowienia skoku jest krótszy o 0.375s.",
+		[5] = "Twój czas odnowienia skoku jest krótszy o 0.5s.",
+		[6] = "Twoja prędkość jest większa o 10%.",
+		[7] = "Twoja prędkość jest większa o 20%.",
+		[8] = "Twoja prędkość jest większa o 30%.",
+		[9] = "Twoja moc skoku jest większa o 20%.",
 	},
 	["NONE"] = {
-		[1] = "None cannot acquire any ranks. Jump on a morph in the middle of the map to change your alignment.",
-		[2] = "I am serious, NONE does not have any rank perks.",
-		[3] = "You are just wasting your time, you could at least rank up MUGGLE instead.",
-		[4] = "MUGGLE gets walkspeed boosts, you know? None does not get anything.",
-		[5] = "If you think there is a secret rank perk at the end, you must really underestimate my laziness.",
-		[6] = "Maybe you just like to torture yourself?",
-		[7] = "People at discord are lying, there is no secret perk at 50 climbs.",
-		[8] = "This is your final warning, stop before a total disappointment.",
-		[9] = "Your persistence is admirable. You get a total toggleable immunity to special stairs and an ability to pass through blocking stairs.",
+		[1] = "None nie może dostać rang. skocz na morf na środku mapy żeby zmienić klasę.",
+		[2] = "Nie żartuję, NONE nie ma żadnych bonusów z rang.",
+		[3] = "Tracisz mój czas, mógłbyś zamiast tego chociaż awansować MUGGLE'a.",
+		[4] = "MUGGLE ma zwiększony skok i prędkość, wiesz? None nie dostaje nic.",
+		[5] = "Jeśli myślisz że jest sekretna ranga na końcu, to się mylisz.",
+		[6] = "Może lubisz torturować siebie?",
+		[7] = "Ludzie na discordzie kłamią, nie ma żadnego bonusu po 50 wspinaczkach.",
+		[8] = "To jest twoje ostatnie ostrzeżenie, przestań zanim się skompromitujesz.",
+		[9] = "Twoja upartość jest nagrodzona. Dostajesz imunitet na wszystko i możesz przechodzić przez blokujące schody.",
 	},
 
 	["CHAMELEON"] = { 
@@ -1216,7 +1216,7 @@ module.gui.gameover.messages = {
 		"Doctor told me to relax, and this is how I relax.",
 		"Joker take some notes. Just kidding, hire me back in the Circus please!",
 		"Where did that staircase go?",
-		"Wheeeeeeeeeeeeeeeeeeee!!!!!!!",
+		"JEEEEEEEJJJJ!!!!!!!",
 	},
 	["NONE"] = {
 		"DON'T, CEASE and REFRAIN",
@@ -1252,7 +1252,7 @@ module.gui.gameover.maxrank ={
 	["OPTIMUS"] = "The Entanglement",
 	["ILLUSION"] = "We are ONE",
 	["DAEMON"] = "You spin me Round and Round.",
-	["BLACK HOLE"] = "The Nothingness", 
+	["BLACK HOLE"] = "Nicość", 
 
 }
 
@@ -1280,9 +1280,9 @@ module.static = {
 
 	["cla_1"] = "Jak Grać>",
 	["cla_2"] = "Najpierw powinieneś przejść samouczek. Jeżeli nie przeszłeś go, dołącz ponownie do gry.",
-	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
+	["cla_3"] = "Celem gry jest dojście na samą górę wieży i zebrać białą kulę. Najpierw wybierz klasę poprzez skoczenie na świecące koła na środku mapy.",
 	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
-	["cla_5"] = "How do I cast spells?",
+	["cla_5"] = "Jak rzucać zaklęcia?",
 	["cla_6"] = "Every spell has a mana cost that will be required to cast the spell. When you collect enough Mana click on the spell. Your hands will start to glow, indicating a successful cast.",
 	["cla_7"] = "After casting, the spell still needs to be executed. All spells are executed by jumping. Depending on the spell, you will need to jump either on platform or stairs. Guide arrows will appear, to help you with the execution.",
 	["cla_8"] = "Once you complete the climb, you will receive 3 spell tokens, that will let you unlock one spell. Complete the climb again to unlock more spells. You can't use tokens from one class to unlock a spell from another.",
@@ -1305,7 +1305,7 @@ module.static = {
 	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
 	["inf_1"] = "NIESKOŃCZONA WIEŻA",
-	["inf_2"] = "RACE MANDATORY",
+	["inf_2"] = "WYMAGANY WYŚCIG",
 	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
 	["inf_5"] = "Fallen Drone",
@@ -1345,27 +1345,27 @@ module.static = {
 	["home_4"] = "'Nie mieliśmy tych zaklęć w alfie!'\ncytat naszego twórcy",
 
 	["oasis_1"] = "OAZA CHAMELEON'A",
-	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
+	["oasis_2"] = "OUR MOTTO:\nCTRL\nC\nCTRL\nV",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
 
 	["nexus_1"] = "ZESPÓŁ HERETIC'A",
-	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
+	["nexus_2"] = "OUR MOTTO:\nNIE\nPRZEJDZIESZ\nTĘDY",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
 
 	["guild_1"] = "GILDIA THIEF'A",
-	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
+	["guild_2"] = "OUR MOTTO:\nKRAŚĆ\nKRAŚĆ\nKRAŚĆ\nKRAŚĆ",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
 	["nether_1"] = "PIEKŁO SPECTRE'A",
-	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
+	["nether_2"] = "OUR MOTTO:\nZNIKNĄĆ\nSCHOWAĆ SIĘ\nI\nTELEPORT",
 	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
 	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
 
 	["study_1"] = "UCZELNIA ARCHON'A",
-	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
+	["study_2"] = "OUR MOTTO:\nOTWÓRZ\nPORTAL\nZC UME T ZO R O LIB SE\nPROFIT",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
 	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
 
@@ -1375,7 +1375,7 @@ module.static = {
 	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
 
 	["shelter_1"] = "BUNKIER DRIFTER'A",
-	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
+	["shelter_2"] = "OUR MOTTO:\nJESTEM\nSURFEREM\nI\nSURFUJE",
 	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
 	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
 
