@@ -178,7 +178,7 @@ module.gui.questions = {
 	["gift"] = "Czy chcesz dać %s przepustkę Dla innego gracza?",
 	["choose"] = "Wybierz gracza, któy dostanie %s przepustkę", 
 	["confirm"] = "Czy chcesz podarować %s przepustkę dla %s?", --second %s is the chosen player
-	["received"] = "Dostałeś %s przepustkę, od %s!",
+	["received"] = "Dostałeś %s przepustkę od %s!",
 	
 	["architect"] = "Architect",
 	["mana"] = "+10 Many",
@@ -807,8 +807,8 @@ module.gui.ranks = {
 	["permanent"] = "Tryb Stały - Skończ wspinaczkę lub znajdź sanktuarium żeby wyjść z obecnego stanu.",
 
 	["architect_1"] = "Jesteś Architect'em!",
-	["architect_2"] = "Architects cannot acquire any ranks.",
-	["architect_3"] = "Roam the tower to wreak havoc!",
+	["architect_2"] = "Architect nie może dostać rang.",
+	["architect_3"] = "Eksploruj wieżę i siej spustoszenie!",
 	
 	["tutorial_1"] = "Jesteś w samouczku!",
 	["tutorial_2"] = "Zdobądź manę i użyj zaklęć żeby wspiąć się na górę wieży.",
@@ -833,11 +833,11 @@ module.gui.ranks = {
 		[9] = "Called Orb will travel twice as fast.",
 	}, 
 	["JOKER"] = { 
-		[4] = "Disco stairs have no effect on you.",
-		[5] = "You can now see all invisible stairs. You have the option to not reveal them.",
-		[6] = "You can now detect platform traps and fake stairs.",
-		[8] = "You can now walk on fake stairs and traps.", 
-		[9] = "You will get bonus Mana when someone triggers any prank. (1 mana per player pranked)",
+		[4] = "Schody Disco nie mają efektu na ciebie.",
+		[5] = "Teraz widzisz wszystkie niewidzialne schody. Masz opcję żeby ich nie odkrywać.",
+		[6] = "Teraz widzisz które platformy i schody są nieprawdziwe.",
+		[8] = "Teraz możesz chodzić po pułapkach.", 
+		[9] = "Dostajesz dodatkową manę za każdy prank. (1 mana za sprankowanego gracza)",
 	},
 	["WICKED"] = {
 		[4] = "You can now walk on obbies as if they were normal stairs.",
@@ -946,7 +946,7 @@ module.gui.ranks = {
 	},
 
 	["CHAMELEON"] = { 
-		[1] = "This is your starter CHAMELEON rank. Other alignment rank bonuses still apply.",
+		[1] = "To jest twoja startowa ranga CHAMELEON'a. Reszta bonusów z innych klas też będą działać.",
 		[2] = "EXCEPTION! You will ONLY get bonus Mana when drones are in CHAMELEON mode.",
 		[3] = "Alignment change animation is much faster now.",
 		[4] = "Your hands will now glow purple when casting, disguising your motives.",
@@ -1042,23 +1042,23 @@ module.gui.gameover.messages = {
 		"HELP, PROTECT and CREATE",
 		"Those noobs need our help",
 		"There would be no hope without us Patrons",
-		"11 out of 10, on the scale of niceness",
+		"11/10 w skali bycia miłym",
 		"Sharing is caring",
 		"You can never have too many stairs",
 		"There is no I in Team, but there is definitely a Patron",
 		"You cannot have a staircase without stairs",
-		"Another job well done",
+		"Kolejna brudna robota wykonana",
 	},
 	["JOKER"] = {
 		"DECEIVE, CONFUSE and LAUGH",
 		"This staircase is a joke",
-		"Why so serious?",
+		"Dlaczego tak poważnie?",
 		"HA! HA! HA!",
 		"Relax and watch them fall",
 		"You mad bro?",
 		"You know the rules and so do I",
 		"It would be boring without me",
-		"Fake stairs are real",
+		"Pułapki są prawdą",
 	},
 	["WICKED"] = {
 		"PREVENT, BLOCK and DESTROY",
@@ -1130,9 +1130,9 @@ module.gui.gameover.messages = {
 		"EXPLOIT, GLITCH and BREAK",
 		"Fair play? There's no such thing",
 		"Wait! This staircase is not real... Are we living in a simulated Roblox experience?",
-		"01000011 01010010 01000001 01011010 01011001 00100000 01010011 01010100 01000001 01001001 01010010 01010011",
+		"01000011 01010010 01000001 01011010 01011001 00100000 01010011 01010100 01000001 01001001 01010010 01010011", -- SLEAZEL I KNOW YOUR SECRETS. IT SAYS "CRAZY STAIRS"
 		"Have you seen any rules posted anywhere here?",
-		"I'm cheating? Everybody here is",
+		"Ja oszukuję? Każdy tu to robi",
 		"I mean few tweaks here and there - Hardly an exploit",
 		"Speed is all that matters",
 		"Escalators for life",
@@ -1278,15 +1278,15 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["cla_1"] = "Jak Grać>",
+	["cla_1"] = "Jak Grać?",
 	["cla_2"] = "Najpierw powinieneś przejść samouczek. Jeżeli nie przeszłeś go, dołącz ponownie do gry.",
 	["cla_3"] = "Celem gry jest dojście na samą górę wieży i zebrać białą kulę. Najpierw wybierz klasę poprzez skoczenie na świecące koła na środku mapy.",
-	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
+	["cla_4"] = "Jeżeli spodobał ci się twój wybór, zdobądź latające bryły żeby uzupełnić manę i wspiąć się po schodach. Użyj zaklęć żeby wspinanie było łatwiejsze.",
 	["cla_5"] = "Jak rzucać zaklęcia?",
 	["cla_6"] = "Every spell has a mana cost that will be required to cast the spell. When you collect enough Mana click on the spell. Your hands will start to glow, indicating a successful cast.",
 	["cla_7"] = "After casting, the spell still needs to be executed. All spells are executed by jumping. Depending on the spell, you will need to jump either on platform or stairs. Guide arrows will appear, to help you with the execution.",
 	["cla_8"] = "Once you complete the climb, you will receive 3 spell tokens, that will let you unlock one spell. Complete the climb again to unlock more spells. You can't use tokens from one class to unlock a spell from another.",
-	["cla_9"] = "How do I cast ultimate spells?",
+	["cla_9"] = "Jak Rzucić Mocniejsze Zaklęcia?",
 	["cla_10"] = "First you will need to unlock all basic spells to access the ultimate spells. Ultimate spells do not require unlocking themself, but they use Tokens instead of Mana when cast.",
 	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
@@ -1295,11 +1295,11 @@ module.static = {
 	["pro_2"] = "Even levels restrictions",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
-	["pro_5"] = "Cursed Stairs",
+	["pro_5"] = "Przeklęte Schody",
 	["pro_6"] = "In the Pro Tower Drones will randomly create Cursed Stairs or turn normal stairs into Cursed ones. There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
 	["pro_7"] = "Cursed Stairs are immune to most spells. You cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
 	["pro_8"] = "Only Heretics and Admirals can restore Cursed Stairs. Purge Event and Restoration will get rid of all cursed stairs too. However Drones will always create new ones in Pro Tower.",
-	["pro_9"] = "Cursed Intersections",
+	["pro_9"] = "Przeklęte Skrzyżowania",
 	["pro_10"] = "In the Pro Tower Drones will randomly create Cursed Intersections too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
 	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
@@ -1312,7 +1312,7 @@ module.static = {
 	["inf_6"] = "Unlike classic and pro towers, Fallen Drone has a special task in the infinite tower.",
 	["inf_7"] = "Each 'raise interval', Fallen Drone will create 2 new levels. Each even level will be restricted. On top of that, some stairs or intersections may even become cursed.",
 	["inf_8"] = "First interval lasts for 20 seconds. Each raise will reduce the interval by half second, until the levels are created faster than they could be climbed.",
-	["inf_9"] = "Eraser",
+	["inf_9"] = "Gumka",
 	["inf_10"] = "Eraser is a special force field that will rise together with tower and remove bottom levels. Falling behind the eraser eliminates players from the round. This is similar to rising lava in other games.",
 	["inf_11"] = "Much like Fallen Drone, eraser will speed up. It will however raise steadily, rather than removing 2 levels at the same time.",
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
@@ -1321,10 +1321,10 @@ module.static = {
 	["cus_2"] = "TY DECYDUJESZ",
 	["cus_3"] = "In custom tower you can adjust any tower settings to your liking.",
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
-	["cus_5"] = "Tower Settings",
+	["cus_5"] = "Opcje Wieży",
 	["cus_6"] = "By changing the tower settings you can have it your way. Choose levels, restrict even levels or even set the tower to the infinite mode.",
 	["cus_7"] = "Only server owner can adjust the settings.",
-	["cus_8"] = "Drone Settings",
+	["cus_8"] = "Opcje Dronów",
 	["cus_9"] = "You can also change the small drone setting. Adjust the max count, the min count or even disable them altoghether.",
 
 	["vr_1"] = "By launching Crazy Stairs in VR mode you automatically become an Architect.",
@@ -1347,83 +1347,83 @@ module.static = {
 	["oasis_1"] = "OAZA CHAMELEON'A",
 	["oasis_2"] = "OUR MOTTO:\nCTRL\nC\nCTRL\nV",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
-	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
+	["oasis_4"] = "'Jestem zbyt leniwy żeby wymyslić coś.'\ncytat naszego twórcy",
 
 	["nexus_1"] = "ZESPÓŁ HERETIC'A",
 	["nexus_2"] = "OUR MOTTO:\nNIE\nPRZEJDZIESZ\nTĘDY",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
+	["nexus_4"] = "'Zabranianie magii jest jak zabieranie dziecku jego zabawkę.'\ncytat naszego twórcy",
 
 	["guild_1"] = "GILDIA THIEF'A",
 	["guild_2"] = "OUR MOTTO:\nKRAŚĆ\nKRAŚĆ\nKRAŚĆ\nKRAŚĆ",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
-	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
+	["guild_4"] = "'TaK NaPrAwDę To SiĘ nAzYwA pOżYcZaNiE.'\ncytat naszego twórcy",
 
 	["nether_1"] = "PIEKŁO SPECTRE'A",
 	["nether_2"] = "OUR MOTTO:\nZNIKNĄĆ\nSCHOWAĆ SIĘ\nI\nTELEPORT",
-	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
-	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
+	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nJest Pay 2 Win\nNot recommended for teams",
+	["nether_4"] = "'Teleportowanie jest bezpieczne dla zdrowia'\ncytat naszego twórcy",
 
 	["study_1"] = "UCZELNIA ARCHON'A",
 	["study_2"] = "OUR MOTTO:\nOTWÓRZ\nPORTAL\nZC UME T ZO R O LIB SE\nPROFIT",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
-	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
+	["study_4"] = "'Kiedyś władałem tymi schodami.'\ncytat naszego twórcy",
 
 	["haven_1"] = "NIEBO PATRON'A",
-	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
+	["haven_2"] = "OUR MOTTO:\nPOMAGAĆ\nORAZ\nDAWAĆ\nROBUXY",
 	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
-	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
+	["haven_4"] = "'Początkujący potrzebują naszej pomocy!'\ncytat naszego twórcy",
 
 	["shelter_1"] = "BUNKIER DRIFTER'A",
 	["shelter_2"] = "OUR MOTTO:\nJESTEM\nSURFEREM\nI\nSURFUJE",
 	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
-	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
+	["shelter_4"] = "'Kto potrzebuje schodów? Jesteśmy w kosmosie!'\ncytat naszego twórcy",
 
 	["circus_1"] = "CYRK JOKER'A",
-	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
+	["circus_2"] = "OUR MOTTO:\nPRANKOWAĆ\nBO\nTAK",
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
-	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
+	["circus_4"] = "'Te schody to jakiś żart.'\ncytat naszego twórcy",
 
 	["base_1"] = "BAZA KEEPER'A",
-	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
+	["base_2"] = "OUR MOTTO:\nRUSZAĆ\nOBRACAĆ\nI\nKONTROLOWAĆ",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
-	["base_4"] = "'Stop messing up my staircase!'\nour founder's quote",
+	["base_4"] = "'Przestańcie bałaganić schody!'\ncytat naszego twórcy",
 
 	["chamber_1"] = "KOMNATA WICKED'A",
-	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
+	["chamber_2"] = "OUR MOTTO:\nNISZCZYĆ\nSCHODY\nDO\nKOŃCA\nŚWIATA",
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
-	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\nour founder's quote",
+	["chamber_4"] = "'Nie jestem zły, po prostu tutaj jest za dużo schoów.'\ncytat naszego twórcy",
 
 	["backdoor_1"] = "TYLNE DRZWI HACKER'A",
-	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
+	["backdoor_2"] = "OUR MOTTO:\nHAKOWAĆ\nAŻ\nDOSTANIEMY\nBANA",
 	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
-	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
+	["backdoor_4"] = "'Fair play? Nie ma takiej rzeczy jak fair play.'\ncytat naszego twórcy",
 
 	["hub_1"] = "CENTRUM SPLICER'A",
-	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
+	["hub_2"] = "OUR MOTTO:\nKOŃCZĄ\nMI\nSIĘ\nPOMYSŁY\nNA\nMOTTA",
 	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
-	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
+	["hub_4"] = "'Prosta linia jest zawsze najgorsza.'\ncytat naszego twórcy",
 
 	["shack_1"] = "CHATKA GREMLIN'A",
-	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTISE",
-	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
-	["shack_4"] = "'Come play with me.'\nour founder's quote",
+	["shack_2"] = "OUR MOTTO:\nMY\nTO\nPODRÓBKA\nJOKER'A",
+	["shack_3"] = "Zalety:\nBrak Zalet\nNaprwadę, nie używaj\nWADY:\nKażdy będzie ciebie nienawidził.\nNAPRAWDĘ KAŻDY",
+	["shack_4"] = "'Choć zagraj ze mną.'\ncytat naszego twórcy",
 
 	["mirror_1"] = "LUSTRO REAVER'A",
 	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
-	["mirror_4"] = "'Mirrors are just doorways.'\nour founder's quote",
+	["mirror_4"] = "'Kocham Lustra.'\ncytat naszego twórcy",
 
 	["grave_1"] = "GRÓB NECROMANCER'A",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We aren't actually haunting you, we just wanna be friends.'\nour founder's quote",
+	["grave_4"] = "'My ciebie nie nawiedzamy, po prostu chcemy być przyjaciółmi.'\ncytat naszego twórcy",
 
 	--NEW (architect)
 	["studio_1"] = "STUDIO ARCHITECT'A",
 	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
 	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
-	["studio_4"] = "'Now I rule this staircase!'\nour founder's quote",
+	["studio_4"] = "'Teraz to ja władam tymi schodami!'\ncytat naszego twórcy",
 	--END NEW
 
 	--SHARED
@@ -1445,9 +1445,9 @@ module.static = {
 	["over_passes"] = "GAME PASSES\nREQUIRED",
 	["over_notgroup"] = "OLIVE COLOR - not in group",
 	["over_group"] = "TEAL COLOR - in the group",
-	["over_mod"] = "MODERATOR - player is a moderator",
-	["over_admin"] = "ADMIN - player is an admin", -- pwease sleazel uwu
-	["over_owner"] = "PRANK ME - Game creator (sleazel)",
+	["over_mod"] = "MODERATOR - Gracz jest moderatorem",
+	["over_admin"] = "ADMIN - Gracz jest adminem", -- hell nah sleazel u aint a furry
+	["over_owner"] = "ZPRANKUJ MNIE - Twórca Gry (sleazel)",
 
 	--OTHER
 	["muggle_lead"] = "HASTY MUGGLES",
@@ -1529,7 +1529,7 @@ module.tutorial = {
 	["tut_big_19"] = "Restore can be cast either on stairs or on adjacent arrow.",
 	["tut_big_20"] = "You need to get to this orb at the top of the staircase to win. Good luck!",
 
-	["tut_select"] = "Select this spell.",
+	["tut_select"] = "Wybierz to zaklęcie.",
 
 	["tut_small_init"] = "Jump to spawn tutorial",
 	["tut_small_collect"] = "Collect Mana",
@@ -1698,8 +1698,8 @@ module.spells.tokencosts = {
 module.serverfeedback = {
 
 	--failed spell (local)
-	["nomana"] = "Not enough Mana!",
-	["notokens"] = "Not enough tokens!",
+	["nomana"] = "Nie wystarczająca ilość many!",
+	["notokens"] = "Nie wystarczająca ilość tokenów!",
 	["coolwait"] = "You can't cast rigs and events now, please wait.",
 	["nomirror"] = "You need to be joined with ghost to walk on mirrors.",
 	--new
@@ -1710,7 +1710,7 @@ module.serverfeedback = {
 	["regenused"] = "Regen already used during this climb.",
 
 	--failed spell (server)
-	["unknown"] = "Unknown issue.", --this should not show for normal players, only exploiters
+	["unknown"] = "Nieznany Błąd.", --this should not show for normal players, only exploiters
 	["lockedspell"] = "This spell is locked!",
 	["possessed"] = "You can't use spells while possessed.",
 	["spelllock"] = "You cannot cast spells now",
@@ -1799,7 +1799,7 @@ module.serverfeedback = {
 	["lich"] = "Rank up to Lich to demolish crossing cursed stairs.",
 
 	--rig activation
-	["keeperrig"] = "Stairs are moving!",
+	["keeperrig"] = "Schody się ruszają!",
 	["hackerrig"] = "Stairs have glitched!",
 	["jokerrig"] = "Stairs have flipped!",
 	["wickedrig"] = "Stairs are collapsing!",
@@ -1829,16 +1829,16 @@ module.serverfeedback = {
 	["overended"] = "Mana Overload ended.",
 
 	--mana share
-	["2minshare"] = "At least 2 mana required...",
-	["noshare"] = "No nearby players to receive mana...",
-	["noinf"] = "You cannot share infinite mana!",
+	["2minshare"] = "Trzeba mieć chociaż 2 many...",
+	["noshare"] = "Jesteś samotny... idź znajdź gracza żeby mu dać manę",
+	["noinf"] = "Nie możesz podzielić się nieskończoną ilością many!",
 	["toomuch"] = "%s has maximum Mana!",
 	["shared"] = "Mana shared with %s!",
 	["received"] = "%s has shared some Mana with you!",
 
 	--prompts
 	--["scancel"] = "Cancel your spell to change alignments.", --removed
-	["morph"] = "Jump here to become %s!",
+	["morph"] = "skocz tu żeby być %s!",
 	["race"] = "Jump here to intiate a new race.",
 	["norace"] = "Race is automatic in the infinite mode.",
 
@@ -1847,7 +1847,7 @@ module.serverfeedback = {
 	["unlocked"] = "Zaklęcie Odblokowane!",
 
 	--chameleon exceptions	
-	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
+	["chamtutorial"] = "Nie możesz użyć CHAMELEON'a w samouczku!",
 	["champossessed"] = "You can't use chameleon while possessed.",
 	["chamhypnotised"] = "You can't use chameleon while hypnotised.",
 	["chamreflected"] = "You can't use chameleon while reflected.",
@@ -1862,35 +1862,35 @@ module.serverfeedback = {
 	["accepted"] = "Code accepted.",
 
 	--free demos
-	["tryspectre"] = "Spectre unlocked for 10 minutes! Do not leave server.",
-	["endspectre"] = "Spectre demo will end in 1 minute!",
-	["trycham"] = "Chameleon unlocked for 10 minutes! Do not leave server.",
+	["tryspectre"] = "Spectre odblokowany na 10 minut! Nie wychodź z serwera.",
+	["endspectre"] = "Spectre będzie zablokowany za minutę!",
+	["trycham"] = "Chameleon odblokowany na 10 minut! Nie wychodź z serwera.",
 	["new20pass"] = "Mana limit increased!",
 	["newchampass"] = "You can now change alignment during climb!",
 	--NEW
 	["newarchpass"] = "You can now become an ARCHITECT!",
-	["tryarch"] = "Non-VR Architect unlocked for 10 minutes! Do not leave server.",
-	["endarch"] = "Non-VR Architect demo will end in 1 minute!",
+	["tryarch"] = "Architect bez VR odblokowany na 10 minut! Nie wychodź z serwera.",
+	["endarch"] = "Architect bez VR będzie zablokowany za minutę!",
 	--END NEW
 	["newspectrepass"] = "You can now become a SPECTRE!",
-	["endcham"] = "Chameleon demo will end in 1 minute!",
+	["endcham"] = "Chameleon będzie zablokowany za minutę!",
 	["trymana"] = "Bigger storage unlocked for 10 minutes! Do not leave server.",
 	["endmana"] = "Bigger storage demo will end in 1 minute!",
 
 
-	["used"] = "Code has been used already.",
+	["used"] = "Już użyłeś tego kodu.",
 	["tooshort"] = "Twoja wiadomość nie została wysłana bo była za krótka.",
 	["sent"] = "Twoja wiadomość została wysłana.",
 	
 	--NEW
-	['noobteleport'] = "You cannot switch towers in the tutorial!",
+	['noobteleport'] = "Nie możesz zmienieć wież w samouczku!",
 	['noobmorph'] = "Complete the tutorial to be able to morph!",
-	['noobnocode'] = "Complete the tutorial to be able to use codes!",
+	['noobnocode'] = "Ukończ samouczek żeby odblokować możliwość wpisywania kodów!",
 	['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
 	
 	--GIFTING
 	['notingame'] = "Player has left the game, you cannot give the game pass!",
-	['alreadyowns'] = "Player already owns this game pass.",
+	['alreadyowns'] = "Gracz ma już tą przepustkę.",
 	['gotit'] = "You have received %s game pass, courtesy of %s",
 	['given'] = "%s has received %s game pass!",
 	--END NEW
@@ -1968,9 +1968,9 @@ module.serverbroadcast = {
 	["over"] = "Wyścig zakończony!",
 
 	--NEW
-	["newrace"] = "%s initiated a race - join them!",
-	["joined"] = "%s has joined the	race!",
-	["2min"] = "Nobody has challenged %s!",
+	["newrace"] = "%s zaczął wyścig - dołącz do niego/niej!",
+	["joined"] = "%s dołączył do wyścigu!",
+	["2min"] = "Nikt nie dołączył do %s!",
 	["infstart"] = "Nieskończony wyścig się zaczął!",
 	
 	--END NEW
@@ -1980,26 +1980,26 @@ module.serverbroadcast = {
 module.localfeedback = {
 
 	--["cancel"] = "Cancel other spell first!", --removed
-	["nomana"] = "Not enough Mana!",
-	["notokens"] = "Not enough Tokens!",
-	["unlocked"] = "Spell unlocked!",
+	["nomana"] = "Nie ma wystarczającej ilości Many!",
+	["notokens"] = "Nie ma wystarczającej ilości Tokenów!",
+	["unlocked"] = "Odblokowano zaklęcie!",
 	["maxmana"] = "Your mana is already at maximum!",
 	["nopurchase"] = "You do not need to purchase mana in the tutorial!",
 	--NEW
 	["limitset"] = "You have a mana limiter active - purchase prevented.", --for refill mana
-	["hasarchitect"] = "You already have the Architect Pass!",
+	["hasarchitect"] = "Już masz tą przepustkę!",
 	--END NEW
-	["haschameleon"] = "You already have the Chameleon Pass!",
-	["hasspectre"] = "You already have the Spectre Pass!",
-	["hasmana"] = "You already have the Bigger Storage Pass!",
-	["nomuggle"] = "You thought there were secret ultimate spells for Muggle but there weren't.",
-	["nonone"] = "You thought there were secret ultimate spells for None but there weren't.",
-	["nounlocks"] = "Unlock all basic spells to access ultimate spells!",
+	["haschameleon"] = "Już masz tą przepustkę!",
+	["hasspectre"] = "Już masz tą przepustkę!",
+	["hasmana"] = "Już masz tą przepustkę!",
+	["nomuggle"] = "Nie ma mocniejszych zaklęć dla tej klasy.",
+	["nonone"] = "Nie ma mocniejszych zaklęć dla tej klasy.",
+	["nounlocks"] = "Odblokuj wszysktie normalne zaklęcia żeby używać mocniejszych zaklęć!",
 	["onetoken"] = "You have been awarded one %s Spell Token!",
 	["moretokens"] = "You have been awarded some %s Spell Tokens!",
-	["music"] = "Music changed successfully.",
-	["nomusic"] = "Music failed to load.",
-	["noteleport"] = "Teleport failed!", 
+	["music"] = "Zmieniono muzykę.",
+	["nomusic"] = "Muzyka nie załadowana.",
+	["noteleport"] = "Błąd teleportu!", 
 	["norefresh"] = "You cannot refresh yet.",
 	["nounion"] = "You can't use Ghost Union right now.",
 	
@@ -2146,13 +2146,13 @@ module.gui.mana = {
 	["refill"] = "PRZEŁADOWANIE", --for all 2nd rank bonuses
 	["overload"] = "WYPEŁNIENIE",
 	["steal"] = "KRADZIEŻ",
-	["gift"] = "GIFT",
+	["gift"] = "PREZENT",
 	["share"] = "SHARE",
 	["prank"] = "PRANK",
 	["possession"] = "POSSESSION",
-	["ritual"] = "RITUAL",
+	["ritual"] = "RYTUŁAŁ",
 	["purge"] = "PURGE",
-	["blessing"] = "BLESSING",
+	["blessing"] = "BŁOGOSŁAWIEŃSTWO",
 	--["hack"] = "HACK", --removed
 	["stash"] = "STASH",
 	["backdoor"] = "BACKDOOR",
@@ -2170,7 +2170,7 @@ module.gui.mana = {
 	["mirror"] = "MIRROR",
 	["grave"] = "GRAVE",
 	["shack"] = "SHACK",
-	["regen"] = "REGENERATE",
+	["regen"] = "REGENERACJA",
 	["optimus"] = "OPTIMUS",
 	["tutorial"] = "SAMOUCZEK",--player mana is drained upon starting tutorial
 
@@ -2190,18 +2190,18 @@ module.gui.gameover.extras = {
 }
 
 module.gui.gameover.raceplacements = {
-	"YOU HAVE WON THE RACE!",
-	"SECOND PLACE!",
-	"THIRD PLACE!",
-	"You have placed fourth.",
-	"You have placed fifth.",
-	"You have placed sixth.",
-	"You have placed seventh.",
-	"You have placed eighth.",
-	"You have placed ninth.",
-	"You have placed tenth.",
-	"You have placed eleventh.",
-	"You have placed twelfth.",
+	"WYGRAŁEŚ WYŚCIG!",
+	"DRUGIE MIEJSCE!",
+	"TRZECIE MIEJSCE!",
+	"Czwarte miejsce.",
+	"Piąte miejsce.",
+	"Szóste miejsce.",
+	"Siódme miejsce.",
+	"Ósme miejsce.",
+	"Dziewiąte miejsce.",
+	"Dziesiąte miejsce.",
+	"Jedenaste Miejsce.",
+	"Dwunaste Miejsce.",
 }
 
 -- PREPARATION --
