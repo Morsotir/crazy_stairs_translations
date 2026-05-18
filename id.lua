@@ -72,7 +72,7 @@ module.gui.serversettings = {
 }
 
 
-module.gui.shop = {
+module.gui.shop = { --completed
 
 	--NEW
 	["architect"] = "Pas Architect memperbolehkan kamu untuk menjadi Architect tanpa perangkat jemala VR.",
@@ -101,10 +101,10 @@ module.gui.shop = {
 }
 
 
-module.gui.nospellsbar = {
+module.gui.nospellsbar = { --completed
 
-	["nocasual"] = "HANYA PEMBALAP YANG BISA MELAKUKAN MANTERA",
-	["possessed"] = "TERKUTUK! (cari mana kanggo kabur)",
+	["nocasual"] = "HANYA PEMBALAP YANG BISA MELAKUKAN MANTRA",
+	["possessed"] = "TERKUTUK! (cari mana untuk kabur)",
 
 }
 
@@ -160,7 +160,7 @@ module.gui.stats = {
 }
 
 
-module.gui.questions = {
+module.gui.questions = { --completed
 	["cancel"] = "Apakah kamu mau membakalkan mantra terbatas ini? Token tidak akan dikembalikan.",
 	["tutorial"]= "Apakah kamu ingin belajar di latihan?",
 	["skip"] = "Apakah kamu ingin melewati latihan?",
@@ -169,16 +169,16 @@ module.gui.questions = {
 --END NEW
 
 
-module.gui.codes = {
+module.gui.codes = { --completed
 
-	["title"] = "MASUKKAN KODENYA",
-	["body"] = "Masukkan kodemu di sini:",
+	["title"] = "MASUKKAN KODE",
+	["body"] = "Masukkan kode di sini:",
 	["prompt"] = "(kode)",
 	["button"] = "TEBUS",
 
 }
 
-module.gui.jukebox = {
+module.gui.jukebox = { --completed
 
 	["title"] = "KOTAK JUKE",
 
@@ -192,7 +192,7 @@ module.gui.jukebox = {
 	--END NEW
 }
 
-module.gui.results = {
+module.gui.results = { --completed
 
 	["title"] = "🏁 HASIL BALAP 🏁",
 
@@ -203,21 +203,21 @@ module.gui.results = {
 	["rank"] = "PERINGKAT",
 	["not"] = "N/A",
 	[1] = "PEMENANG!",
-	[2] = "ke‑2",
-	[3] = "ke‑3",
-	[4] = "ke‑4",
-	[5] = "ke‑5",
-	[6] = "ke‑6",
-	[7] = "ke‑7",
-	[8] = "ke‑8",
-	[9] = "ke‑9",
-	[10] = "ke‑10",
-	[11] = "ke‑11",
-	[12] = "ke‑12",
+	[2] = "Ke‑2",
+	[3] = "Ke‑3",
+	[4] = "Ke‑4",
+	[5] = "Ke‑5",
+	[6] = "Ke‑6",
+	[7] = "Ke‑7",
+	[8] = "Ke‑8",
+	[9] = "Ke‑9",
+	[10] = "Ke‑10",
+	[11] = "Ke‑11",
+	[12] = "Ke‑12",
 
 }
 
-module.gui.menu = {
+module.gui.menu = { --completed
 
 
 	["Codes"] = "Entri Kode",
@@ -247,7 +247,7 @@ local CommonSpellNames = {
 
 module.spells.names = {
 
-	--PATRON
+	--PATRON --completed
 	["summon"] = "Bangun Tangga",
 	["restore"] = "Panggil Bola", 
 	["split"] = "Bangun Ulang Tangga Terbalik",
@@ -259,7 +259,7 @@ module.spells.names = {
 	["patronevent"] = "Berkat Tangga",
 	["patronaltevent"] = "Penyiutan", -- < Needs another better name for 'Shrinkage/Ciutkan Semua Tangga'
 
-	--JOKER 
+	--JOKER --completed
 	["flip"] = "Balik Tangga",
 	["flipabove"] = "Balik Tangga di Atas",
 	["fake"] = "Bangun Tangga Palsu",
@@ -271,19 +271,19 @@ module.spells.names = {
 	["jokerevent"] = "Sihir Persembunyian Gila", -- < Needs another better name for 'The Cloak /Selubung Semua Tangga'
 	["jokeraltevent"] = "Kesalahan Pisang (Balik Semua Tangga)", -- < Needs another better name for 'Flip Em All/Balik Semua Tangga'
 
-	--WICKED
+	--WICKED --completed
 	["destroy"] = "Hancurkan Tangga",
 	["destroyabove"] = "Hancurkan Tangga di Atas",
-	["bend"] = "Bengkok Tangga ke Atas",
+	["bend"] = "Bengkokkan Tangga ke Atas",
 	["damage"] = "Cacati Tangga di Atas",
-	["flatten"] = "Bengkok Tangga Terbalik ke Bawah",
+	["flatten"] = "Bengkokkan Tangga Terbalik ke Bawah",
 	["wall"] = "Buat Barikade" ,
 
 	["bender"] = "Pembengkok",
 	["wickedevent"] = "Gempa Menara",
 	["wickedaltevent"] = "Pembersihan",
 
-	--KEEPER
+	--KEEPER --completed
 	["move"] = "Pindah Tangga",
 	["rotate"] = "Putar Tangga",
 	["moveup"] = "Pindah Tangga ke Atas",
@@ -295,7 +295,7 @@ module.spells.names = {
 	["keeperevent"] = "Rombak Kembali", -- < Needs another better name for 'Reshuffle/Rombak Kembali'
 	["keeperaltevent"] = "Pemulihan",
 
-	--SPECTRE
+	--SPECTRE --completed
 	["phantom"] = "Buat Tangga Berhantu",
 	["ghost"] = "Hantui Tangga di Atas",
 	["shadow"] = "Hantui Tangga",
@@ -307,7 +307,7 @@ module.spells.names = {
 	["spectreevent"] = "Imaginasi Tangga",
 	["spectrealtevent"] = "Alam Æther",
 
-	--HACKER
+	--HACKER --completed
 	["dash"] = "Flyhack",
 	["blink"] = "Noclip menembus Tangga di Atas",
 	["swap"] = "Teleportasi ke Hantumu",
@@ -319,10 +319,10 @@ module.spells.names = {
 	["hackerevent"] = "Menara Mal",
 	["hackeraltevent"] = "Eskalator Arus",
 
-	--THIEF
+	--THIEF --completed
 	["steal"] = "Curi Tangga",
 	["stealabove"] = "Curi Tangga di Atas",
-	["place"] = "Kembali Tangga",
+	["place"] = "Kembalikan Tangga",
 	["uppass"] = "Tangga Spiral",
 	["sidepass"] = "Letakkan Jalan Pintas",
 	["drop"] = "Enyahkan Tangga",
@@ -331,7 +331,7 @@ module.spells.names = {
 	["thiefevent"] = "Dunia Datar",
 	["thiefaltevent"] = "Mega-Pintasan",
 
-	--ARCHON
+	--ARCHON --completed
 	["splitup"] = "Buka Portal ke Atas",
 	["splitrotate"] = "Buka Portal ke Sebelah",
 	["splitside"] = "Buka Portal ke Samping",
@@ -343,7 +343,7 @@ module.spells.names = {
 	["archonevent"] = "Labirin Portal",
 	["archonaltevent"] = "Naik Turun",
 
-	--DRIFTER
+	--DRIFTER --completed
 	["indrift"] = "Selancar",
 	["outdrift"] = "Hanyutkan Tangga secara Acak",
 	["updrift"] = "Platform Lift",
@@ -355,7 +355,7 @@ module.spells.names = {
 	["drifterevent"] = "Badai Tangga",
 	["drifteraltevent"] = "Pengangkatan", -- < Needs another better name for 'Liftage/Angkat Semua Tangga'
 
-	--HERETIC
+	--HERETIC --completed
 	["createcursed"] = "Bangoen Tangga Têrkoetoek", --Bangun Tangga Terkutuk
 	["curse"] = "Koetoek Tangga", --Kutuk Tangga
 	["curseabove"] = "Koetoek Tangga di Atas", --Kutuk Tangga di Atas
@@ -367,7 +367,7 @@ module.spells.names = {
 	["hereticevent"] = "Skisma",
 	["hereticaltevent"] = "Koetoek Mênara", -- < Needs another better name for 'Vengeance/Kutuk Semua Tangga' --Kutuk Menara
 
-	--SPLICER
+	--SPLICER --completed
 	["twistup"] = "Sambung Tangga ke Atas",
 	["twistside"] = "Sambung Tangga ke Sejajar",
 	["twistrotate"] = "Sambung Tangga ke Sebelah",
@@ -379,7 +379,7 @@ module.spells.names = {
 	["splicerevent"] = "Koneksi Tangga",
 	["spliceraltevent"] = "Pisakhan Semua Tangga", -- PLZ NEED ANOTHER BETTER NAME FOR 'Bisect' (Splice All Normal Stairs Forward)
 
-	--necro
+	--necro --completed
 	["createdual"] = "Buat Tangga Kembar",
 	["copyplatform"] = "Salin Platform Hantumu",
 	["soulbridge"] = "Buat Penyambung Jiwa",
@@ -391,7 +391,7 @@ module.spells.names = {
 	["necromancerevent"] = "Kebangkitan Tangga",
 	["necromanceraltevent"] = "Panen Tangga",
 
-	--reaver
+	--reaver --completed
 	["createmirrored"] = "Bangun Tangga Cermin",
 	["bigmirror"] = "Platform Cermin Besar",
 	["smallmirror"] = "Platform Cermin Kecil",
@@ -404,7 +404,7 @@ module.spells.names = {
 	["reaveraltevent"] = "Naik Terpaksa",
 
 
-	--gremlin
+	--gremlin --completed
 	["tram"] = "Bangun Tangga Funikular",
 	["screwup"] = "Pilin Naik",
 	["revolve"] = "Kisar Tangga",
@@ -416,7 +416,7 @@ module.spells.names = {
 	["gremlinevent"] = "Roda Kematian",
 	["gremlinaltevent"] = "Macet",
 
-	--CHAMELEON
+	--CHAMELEON --completed
 	["ditch"] = "Tangga Menyilang",
 	["warp"] = "Tangga Fleksibel",
 	["chamdown"] = "Pindah Tangga ke Bawah",
@@ -424,13 +424,13 @@ module.spells.names = {
 	["chamswap"] = "Jadi Hantu",
 	["chamdrawabove"] = "Jembatan Angkat Naik",
 
-	--NEW
+	--NEW --completed
 
 	["mugglereg"] = "Menara sedang regenerasi…",
 	["mugglecd"] = "Pendinginan Acara dan Rig",
 	["share"] = "Bagikan mana (minimum 2 mana dibutuhkan)",
 
-	--ARCHITECT
+	--ARCHITECT  --completed
 	["archpatron"] = "Bangun atau Ciutkan tangga",
 	["archarchon"] = "Buka Portal pada Tangga atau Platform",
 	["archthief"] = "Curi atau Kembali tangga",
@@ -444,7 +444,7 @@ module.spells.names = {
 	["archdrifter"] = "Hanyutkan atau Lift",
 	["archspectre"] = "Berhantu atau Hantui Tangga ",
 	["archreaver"] = "Tangga Cermin atau Satu Arah",
-	["archheretic"] = "Kutuk Tangga atau Simpang",
+	["archheretic"] = "Koetoek Tangga ataoe Simpang",
 
 	--END NEW
 
@@ -462,13 +462,13 @@ local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this sp
 
 module.spells.descriptions = {
 
-	--PATRON
-	["summon"] = "This spell allows you to create stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
-	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
-	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
-	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
-	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
-	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
+	--PATRON --completed
+	["summon"] = "Mantra ini untuk membangun tangga di arah dipilih. Jika terdapat tangga menyilang yang berhalangan di arahnya, tangga tersebut akan dihancurkan.",
+	["restore"] = "Mantra ini untuk memanggil bola di lantai teratas ke platform terpilih. Naiklah ke peringkat Defender untuk mengurangi biayanya menjadi 2 Mana. Naiklah ke peringkat Saviour untuk menggandakan kecepatan bola yang akan pergi kepadamu.",
+	["split"] = "Mantra ini untuk membangun ulang tangga berbalikan arah. Tangga terbangun ulang akan menjadi normal bagaimanapun tipe tangga asli.",
+	["shrinkabove"] = "Mantra ini untuk menciutkan tangga di atas, supaya kamu bisa berjalan sekitar itu.",
+	["link"] = "Mantra ini untuk membuat jembatan energi di antara dua platform selama 60 detik. Jembatan energi tidak berbenda dari bawah. Naiklah ke peringkat Creator untuk memperpanjang waktu menjadi 120 detik.",
+	["portal"] = "Mantra ini untuk membuat portal yang berteleportasi pendaki ke platform di atas. Portal berlangsung selama 60 detik. Naiklah ke peringkat Protector untuk memperpanjang waktunya menjadi 120 detik.",
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
@@ -484,7 +484,7 @@ module.spells.descriptions = {
 	["fake"] = "Mantra ini untuk membangun tangga palsu di arah dipilih. Jika ada terdapat tangga menyilang yang berhalangan di arahnya, tangga tersebut akan dihancurkan. Siapa pun (termasukmu) yang berusaha untuk naik akan jatuh, kecuali Trickster, It dan pendaki dalam mode Fusi Hantu.",
 	["invisible"] =  "Mantra ini untuk membangun tangga tak terlihat. Namun, ini tidak bisa menghancurkan tangga menyilang yang berhalangan, jadi hanya dibangun di simpang kosong. Naiklah ke peringkat Jester untuk mendeteksi semua tangga tak terlihat dan punya opsi untuk tidak menunjukkannya.",
 	["disco"] = "Mantra ini untuk membuatkan tangga jadi berdisko. Siapa pun (termasukmu) akan berhenti dan menari selama 5 detik (biasanya dua kali) ketika menginjaknya. Naiklah ke peringkat Comic untuk menjadi kebal terhadap tangga berdisko.",
-	["trap"] = "Mantra ini untuk membuatkan platform jadi jebakan selama 60 detik. Siapa pun (termasukmu) yang berjalan dalam jebakan tersebut akan jatuh ke platform di bawahnya. Naiklah ke peringkat Jokester untuk mendeteksi platform jebakan. Naiklah ke peringkat Trickster untuk menjadi kebal terhadap platform jebakan.",
+	["trap"] = "Mantra ini untuk membuatkan platform menjadi jebakan selama 60 detik. Siapa pun (termasukmu) yang berjalan dalam jebakan tersebut akan jatuh ke platform di bawahnya. Naiklah ke peringkat Jokester untuk mendeteksi platform jebakan. Naiklah ke peringkat Trickster untuk menjadi kebal terhadap platform jebakan.",
 
 	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
@@ -494,13 +494,13 @@ module.spells.descriptions = {
 	["jokerrefill"] = overload,
 	["jokerunion"] = union,
 
-	--WICKED
-	["destroy"] = "Mantra ini untuk menghancurkan tangga. Tidak seperti mantra lain, itu akan  will work on tangga apa pun. Naiklah ke peringkat Vile untuk cast this spell for free. Naiklah ke peringkat VICIOUS untuk mendapatkan 1 mana bonus everytime kamu menghancurkan tangga yang spesial apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga… TERKUTUK ya.",
-	["destroyabove"] = "This spell destroys above stairs. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
-	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
-	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
-	["wall"] = "This spell creates energy wall on the platform plus a link to opposite platform for 60 seconds. Only Wickeds and Ghost Unions can go through such wall and on the link.",
+	--WICKED --completed
+	["destroy"] = "Mantra ini untuk menghancurkan tangga. Tidak seperti mantra lain, mantra ini bekerja pada tangga apa pun. Naiklah ke peringkat Vile untuk melakukan mantra ini secara gratis. Naiklah ke peringkat Vicious untuk mendapatkan 1 mana bonus setiap kali kamu menghancurkan tangga yang spesial apa pun. Naiklah ke peringkat Annihilator supaya dapat menghancurkan tangga… TERKUTUK ya.",
+	["destroyabove"] = "Mantra ini untuk menghancurkan tangga di atas. Tidak seperti mantra lain, mantra ini bekerja pada tangga apa pun. Naiklah ke peringkat Vicious untuk mendapatkan 1 mana bonus setiap kali kamu menghancurkan tangga yang spesial apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
+	["bend"] = "Mantra ini untuk membengkokkan tangga ke atas. Menggunakan mantra ini untuk mengakses platform di atas.",
+	["damage"] = "Mantra ini untuk mencacati tangga menjadi obby dengan cara menghapus sebagian besar anak tangganya. Sebelum mencoba, ingatlah mengenai pendinginan lompat. Naiklah ke peringkat Destroyer untuk mendaki tangga seperti tangga normal.",
+	["flatten"] = "Mantra ini untuk membengkokkan tangga terbalik ke bawah. Menggunakan mantra ini untuk mengakses platform terbalik.",
+	["wall"] = "Mantra ini membuat barikade pada platform dan juga sebuah jembatan yang terhubung ke platform terbalik selama 60 detik. Hanya Wicked dan pendaki dalam mode Fusi Hantu yang dapat melewati dinding dan berjalan melalui jembatan.",
 
 	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
@@ -514,7 +514,7 @@ module.spells.descriptions = {
 	["move"] = "Mantra ini untuk memindahkan tangga secara horizontal,c |    This spell will move stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["movedown"] = "This spell fixes any special stairs. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
+	["movedown"] = "Mantra ini untuk memulihkan tangga spesial apa pun. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
 	["rig"] = "This spell will move or rotate stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["moverandom"] = "This spell will move or rotate above stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
 
@@ -527,12 +527,12 @@ module.spells.descriptions = {
 	["keeperunion"] = union,
 
 	--SPECTRE
-	["phantom"] = "This spell will create Phantom Stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
-	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
-	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
-	["horizontal"] = "This spell lets you teleport horizontally in the chosen direction. You can teleport through any un-cursed stairs in the way.",
-	["random"] = "This spell will teleport you to a random platform on the same level.",
-	["vertical"] = "This spell will teleport you up, to the platform above.",
+	["phantom"] = "Mantra ini untuk membuat tangga berhantu di arah dipilih. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
+	["ghost"] = "Mantra ini untuk menjadikan tangga berada di atas hantu. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
+	["shadow"] = "Mantra ini untuk menjadikan tangga hantu. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
+	["horizontal"] = "Mantra ini untuk berteleportasi secara horizontal ke arah dipilih. You can teleport through any un-cursed stairs in the way.",
+	["random"] = "Mantra ini untuk berteleportasi secara acak ke sebuah platform acak yang       This spell will teleport you to a random platform on the same level.",
+	["vertical"] = "Mantra ini untuk berteleportasi ke atas      spell will teleport you up, to the platform above.",
 
 	["traveller"] = timed ..  "It allows you to cast as many Horizontal Teleport spells, as you like for one minute."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
 	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to Vision to have an option to walk on Spectre Rigs without triggering them.",
@@ -543,12 +543,12 @@ module.spells.descriptions = {
 	["spectreunion"] = union,
 
 	--HACKER
-	["dash"] = "This spell will teleport you in the chosen direction. You cannot teleport through blocking stairs. Rank up to CRACKER to speed up this spell by 50%.",
-	["blink"] = "This spell will teleport you around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Rank up to EXPLOITER to speed up this spell by 50%.",
-	["swap"] = "This spell will teleport you to the spot where your ghost is. Unlike other basic spells, Swap can be cast anywhere.",
-	["slide"] = "This spell will turn stairs into an Escalator. You can choose either Up or Down Escalator. Rank up to SCRIPTER to have an option to be immune to Escalators.",
-	["slideup"] = "This spell will hack in stairs in the chosen direction. For this to work, there have to be stairs already present in that intersection facing the opposite way. Hacked in stairs can be of any un-cursed type and will be restored upon emerging.",
-	["glitch"] = "This spell will glitch stairs, teleporting you and themselves to a different spot on the same level. Rank up to ZERO, to teleport stairs next to the orb, if you already are on the top level.",
+	["dash"] = "Mantra ini untuk nge‑flyhack ke arah dipilih. Kamu tidak bisa nge‑flyhack menembus tangga yang berhalangan. Naiklah ke peringkat Cracker untuk mempercepat mantra ini sebanyak 50%.",
+	["blink"] = "Mantra ini untuk nge‑noclip menembus tangga tak terkutuk di atas. If the above stairs do not effectively block the way, this spell won't work. Naiklah ke peringkat Exploiter untuk mempercepat mantra ini sebanyak 50%.",
+	["swap"] = "Mantra ini untuk berteleportasi ke tempat di mana hantumu berada. Tidak seperti mantra dasar lain, mantra ini bisa dilakukan di mana pun.",
+	["slide"] = "Mantra ini untuk mengubah tangga menjadi eskalator. Kamu bisa memilih eskalator naik atau turun. Naiklah ke peringkat Scripter untuk punya opsi untuk menjadi imun terhadap eskalator.",
+	["slideup"] = "Mantra ini untuk nge‑hack tangga di arah terpilih. For this to work, there have to be stairs already present in that intersection facing the opposite way. Tangga ter‑hack bisa menjadi berupa tipe apa pun tak terkutuk dan akan dipulihkan saat muncul.",
+	["glitch"] = "Mantra ini untuk memberikan glitch pada tangga, berteleportasimu dan mereka ke to tempat yang berbeda di lantai sama. Naiklah ke peringkat Zero untuk berteleportasi tangga ke tempat yang berdekatan dengan bola, kalau kamu sudah berada di lantai teratas.",
 
 	["hack"] = timed .. "It allows you to cast as many Upwards Escalators as you like for one minute. If there are blocking un-cursed stairs above, they will be demolished." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
 	["hackerrigevent"] = rig .. "the Hacker Rig. Stairs, once triggered it will teleport player and stairs to a different spot on the same level. Only one player will be teleported. Rank up to REAPER to have an option to walk on Hacker Rigs without triggering them.",
@@ -559,9 +559,9 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
+	["steal"] = "Mantra ini untuk mencuri tangga normal atau dimanipulasi. Mantra ini atau yang mencuri di atas diperlukan untuk melakukan mantra Thief dasar lainnya. Naiklah ke peringkat Hijacker supaya dapat mencuri tangga tak terkutuk apa pun. Naiklah ke peringkat Outlaw supaya dapat mencuri dua tangga sekaligus.",
+	["stealabove"] = "Mantra ini untuk mencuri tangga normal atau dimanipulasi di atas. Mantra ini atau yang mencuri di bawah diperlukan untuk melakukan mantra Thief dasar lainnya. Naiklah ke peringkat Hijacker supaya dapat mencuri tangga tak terkutuk apa pun. Naiklah ke peringkat Outlaw supaya dapat mencuri dua tangga sekaligus.",
+	["place"] = "Mantra ini untuk mengembalikan curian di arah dipilih. Namun, mantra ini tidak akan menghancurkan tangga menyilang, so you can only place stairs in an empty intersection.",
 	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
 	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
 	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
@@ -639,12 +639,12 @@ module.spells.descriptions = {
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
-	["createdual"] = "This spell will Create Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
+	["createdual"] = "Mantra ini untuk membangun tangga untuk kamu sama hantumu, sehingga pendaki yang di sisi hantumu bisa menaikinya. Naiklah ke peringkat Skeleton untuk hantu untuk ..... (ignore) tangga terkutuk dan simpang terkunci. Naiklah ke peringkat Lich untuk menghancurkan tangga berhalangan dengan mantra ini.",
 	["copyplatform"] = "This spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
 	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
-	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
+	["undeadabove"] = "Mantra ini untuk mematikan tangga di atasmu dan hantumu. Jika tidak ada tangga di atas hantumu,     they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
 	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
-	["regen"] = "Use this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
+	["regen"] = "Mantra ini untuk mereproduksi Mana     Use this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
 
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Crossing stairs will be demolished regradless of rank." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
@@ -655,12 +655,12 @@ module.spells.descriptions = {
 	["necromancerunion"] = union,
 
 
-	["createmirrored"] = "This spell will Create Stairs with a mirror in the middle. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. Rank up to Poltergeist to demolish crossing stairs with this spell. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["createmirrored"] = "Mantra ini untuk membangun tangga dengan sebuah cermin di tengahnya.        Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. Rank up to Poltergeist to demolish crossing stairs with this spell. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["bigmirror"] = "This spell will create a giant mirror on the whole level for 10 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Giant mirrors will remove any small mirrors on the level. Rank up to Presence to extend mirror lifetime to 15 seconds.",
 	["smallmirror"] = "This spell will create a small mirror in the chosen direction for 6 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Rank up to Presence to extend mirror lifetime to 9 seconds.",
 	["outermirror"] = "This spell will create a mirror in the outer direction and twin mirror on the other side of the map. It can only be used in outer platforms. Players who walk through such mirror will merge with their ghost and teleport to the connected mirror on the other side of the tower. Mirror will fade away after 60 seconds. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["merge"] = "Use this spell to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["oneway"] = "This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Illusion to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["oneway"] = "Mantra ini untuk membuat tangga      spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Illusion to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will turn into one-way stairs with random direction blocked. Rank up to WIGHT to have an option to avoid below Reaver Rigs.",
@@ -671,7 +671,7 @@ module.spells.descriptions = {
 	["reaverunion"] = union,
 
 
-	["tram"] = "This spell will create Tram Stairs in the chosen direction. Tram stairs have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Rank up to FIEND to remotely bring back away Trams from any platform.",
+	["tram"] = "Mantra ini untuk membangun tangga funikular di arah dipilih. Tangga funikular hanya punya setengah panjang tangga normal. Tangga tersebut akan secara otomatis berjalan ke platform target di atas segara setelah dibangun. Lompat lagi pada tangga tersebut untuk menjalankannya kembali. Naiklah ke peringkat Fiend untuk mengembalikan funikular dari jarak jauh.",
 	["screwdown"] = "This spell will turn below stairs into downwards corkscrew. It will be near to impossible to ascend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
 	["screwup"] = "This spell will turn above stairs into upwards corkscrew, allowing you to pass. It will be near to impossible to descend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
 	["revolve"] = "This spell will turn below stairs into revolving propeller on a Z axis. You can choose direction of the rotation. Stairs will stop briefly after each 180 turn.",
@@ -720,8 +720,8 @@ module.spells.descriptions = {
 
 }
 local CommonPerksInsertALignment = {
-	[1] = "This is Your starter %s rank.",
-	[2] = "You will get bonus Mana when drones are in %s mode.",
+	[1] = "Inilah peringkat %s pemulamu.",
+	[2] = "Kamu akan mendapatkan mana bonus ketika dron berada dalam mode %s.",
 }
 local CommonPerksInsertTimedSpell = {
 	[3] = "If someone casts a %s spell, your Mana will be refilled.",
@@ -736,17 +736,17 @@ module.gui.ranks = {
 
 	--none
 
-	["none_1"] = "You have not chosen an alignment!",
-	["none_2"] = "To cast spells, you MUST pick a class!",
+	["none_1"] = "Kamu belum memilih sebuah kelas!",
+	["none_2"] = "To cast spells, kamu HARUS memilih kelas apa saja!",
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
 	["possessed_2"] = "Find Mana or Patron Rig to break free.",
 	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
 
-	["hypnotised_1"] = "You have been Hypnotised!",
-	["hypnotised_2"] = "Find Mana or Patron Rig to break free.",
-	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+	["hypnotised_1"] = "Kamu telah dihipnotis!",
+	["hypnotised_2"] = "Carilah mana atau rig Patron untuk kabur!",
+	["hypnotised_3"] = "Sebagai Hypnotised, kontrolmu terbalik!!",
 
 	["architect_1"] = "Kamu sekarang menjadi Architect!",
 	["architect_2"] = "Architect cannot acquire any ranks.",
@@ -831,7 +831,7 @@ module.gui.ranks = {
 		[5] = "You are now immune to being possessed.",
 		[6] = "You can now cast the Flicker spell on a cursed intersection.",
 		[8] = "Your Create Cursed Stairs and Malediction spells can now destroy blocking cursed stairs.",
-		[9] = "You will get 1 extra Mana everytime someone is possessed.",
+		[9] = "Kamu akan dapat mana bonus setiap pendaki             You will get 1 extra Mana everytime someone is possessed.",
 	},
 	["SPLICER"] = {
 		[4] = "Kamu bisa meluruskan tangga terputus dari sebuah platform.",
@@ -946,21 +946,21 @@ module.gui.settings = {
 module.gui.gameover = {}
 
 module.gui.gameover.results = {
-
+ --completed
 	["class"] = "KELASMU",
 	["time"] = "WAKTU PENDAKIANMU",
 	["climbs"] = "PENDAKIAN DIDAPATKAN",
 	["tokens"] = "TOKEN DIDAPATKAN",
 	["rank"] = "PERINGKATMU SAAT INI",
 
-	--NEW
+	--NEW --completed
 	["role"] = "PERINGKAT KESEMUAANMU",
 	["classic"] = "REKOR MENARA KLASIK",	
 	["pro"] = "REKOR MENARA PRO",	
 	["infinite"] = "REKOR MENARA INFINIT",
 	["custom"] = "REKOR MENARA KUSTOM", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
 	["noVR"] = "REKOR MENARA KLASIK", --this will show in noVR tower, as they share the same record
-
+--completed
 	["cTime"] = "REKOR %s", --%s will be replaced by the used class
 	["levels"] = "TATARAN DICAPAI",
 	["cClimbs"]	= "%s PENDAKIAN", --%s will be replaced by the used class
@@ -1009,8 +1009,8 @@ module.gui.gameover.messages = {
 	},
 	["SPECTRE"] = {
 		"HILANG, SEMBUNYI dan TELEPORTASI",
-		"Of course teleporting is safe",
-		"You can't catch me",
+		"Teleportasi itu aman dong.", -- reused from old ID translation
+		"♪ Kau tak bisa menangkapku sekarang ♪", -- translated by Batcansqueak
 		"The beauty of ghosted stairs is unparalleled",
 		"People falling? Why should I care?",
 		"You can solve all your problems with teleporting",
@@ -1023,7 +1023,7 @@ module.gui.gameover.messages = {
 		"We did not have those fancy spells in alpha stage",
 		"I swear those Drones are rigged",
 		"There is always a path",
-		"Stairjumping is a talent",
+		"Peny‑stairjump‑an tuh bakat.", -- translated by Batcansqueak
 		"My secret? Stop and think",
 		"I don't believe in magic",
 		"Sometimes you need to wait for a drone - Like in real life",
@@ -1111,7 +1111,7 @@ module.gui.gameover.messages = {
 		"Jangan pernah jalan lurus untuk terlalu lama!",
 		"Campurkan hidupmu!",
 		"Kekacauan orang lain adalah urusan Splicer.",
-		"Aku *bisa banget* nyambungin tangga itu.",
+		"Aku <b>bisa banget</b> nyambungin tangga itu.",
 		"Terkoneksi sama orang? Nggak lah, mending terkoneksi sama tangga!",
 		"Pikiranku emang udah bengkok dari sananya.",
 		"Pisah atau Sambung—itu dia pertanyaannya.",
@@ -1193,7 +1193,7 @@ module.gui.gameover.maxrank ={
 }
 
 module.gui.gameover.credits = {
-
+--completed
 	["common"] = {
 		"TANGGA GILA",
 		"Game dikonseptualisasikan, dirancang dan dikodekan by Sleazel",
@@ -1202,7 +1202,7 @@ module.gui.gameover.credits = {
 		"Skybox dibuat generator @wwwtyro",
 		"Datastore module, ProfileStore, by loleris",
 		"Terima kasih sudah bermain! :]",	
-	},
+	}, 
 	["climb"] = "Musik pendakian %s - % by %",
 	["endgame"] = "Musik endgame %s - % by %",
 	["disco"] = "Musik tangga berdisko - % by %",
@@ -1288,7 +1288,7 @@ module.static = {
 	["nexus_1"] = "PÊRHUBUNGAN HERETIC",
 	["nexus_2"] = "MOTO KAMI:\nKAMOE\nTAK\nDAPAT\nLÉWAT",
 	["nexus_3"] = "PRO:\nBest in pro tower\nCannot be stopped\nKONTRA:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "“Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruän.”\nkata pendiri kami",
+	["nexus_4"] = "“Mêlarang ilmoe hitam itoe sêpêrti mêlarang kêsêroeän.”\nkata pêndiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
 	["guild_2"] = "MOTO KAMI:\nCURI\nGUNAKAN\nDAN\g",
@@ -1385,11 +1385,11 @@ module.static = {
 	["over_admin"] = "ADMIN berarti pendaki adalah admin", -- pwease sleazel uwu
 	["over_owner"] = "PRANK ME berarti adalah pembuat Tangga Gila (Sleazel)",
 
-	--OTHER
+	--OTHER --completed
 	["muggle_lead"] = "MUGGLE TERCEPAT",
 	["muggle_ranks"] = "PERINGKAT MUGGLE",
 
-	["hacker_lead"] = "ENCRYPTED HACKERS",
+	["hacker_lead"] = "HACKER TERAMAN",
 	["hacker_ranks"] = "PERINGKAT HACKER",
 
 	["wicked_lead"] = "WICKED TERKASAR",
@@ -1401,28 +1401,28 @@ module.static = {
 	["joker_lead"] = "JOKER TERGILA",
 	["joker_ranks"] = "PERINGKAT JOKER",
 
-	["drifter_lead"] = "RAPID DRIFTERS",
+	["drifter_lead"] = "DRIFTER TEREKSPRES",
 	["drifter_ranks"] = "PERINGKAT DRIFTER",
 
 	["patron_lead"] = "PATRON TERHORMAT",
 	["patron_ranks"] = "PERINGKAT PATRON",
 
-	["archon_lead"] = "AGILE ARCHONS",
+	["archon_lead"] = "ARCHON TERLINCAH",
 	["archon_ranks"] = "PERINGKAT ARCHON",
 
-	["spectre_lead"] = "FLYING SPECTRES",
+	["spectre_lead"] = "SPECTRE TERPESAT",
 	["spectre_ranks"] = "PERINGKAT SPECTRE",
 
-	["thief_lead"] = "THIEF PALING TERSEMBUNYI",
+	["thief_lead"] = "THIEF TERSEMBUNYI²",
 	["thief_ranks"] = "PERINGKAT THIEF",
 
-	["heretic_lead"] = "HERETIC TÊRKÊJAM",
+	["heretic_lead"] = "HERETIC TÊRKÊDJAM",
 	["heretic_ranks"] = "PÊRINGKAT HERETIC",
 
-	["necromancer_lead"] = "NECROMANCER PALING TERBANGKIT",
+	["necromancer_lead"] = "NECROMANCER TERKUAT",
 	["necromancer_ranks"] = "PERINGKAT NECROMANCER",
 
-	["splicer_lead"] = "SPLICER PALING TEKNIS",
+	["splicer_lead"] = "SPLICER TERTEKNIS",
 	["splicer_ranks"] = "PERINGKAT SPLICER",
 
 	["reaver_lead"] = "REAVER TERDALAM",
@@ -1436,7 +1436,7 @@ module.static = {
 
 	["dailies"] = "REKOR HARI INI",
 	["most_climbs"] = "PENDAKIAN TERBANYAK",
-	["most_wins"] = "KEMENANGAN BALAPN TERBANYAK", 
+	["most_wins"] = "KEMENANGAN BALAPAN TERBANYAK", 
 
 }
 
@@ -1460,9 +1460,9 @@ module.tutorial = {
 	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
 	["tut_big_15"] = "You are now a Spectre, Spectre is a premium alignment best for solo play.",
 	["tut_big_16"] = "Your goal - reach the top and grab the orb. Good luck!",
-
+--completed
 	["tut_select"] = "Pilih mantra ini.",
-
+--completed
 	["tut_small_init"] = "Lompat untuk memulai latihan!",
 	["tut_small_morph"] = "Lompat pada morph.",
 	["tut_small_arrow"] = "Lompat pada panah.",
@@ -1585,11 +1585,11 @@ module.guide = {
 		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
 	},
 
-	['anywhere'] = {
+	['anywhere'] = { --completed
 		['anywhere'] = "Mantra ini dapat dilaksanakan di mana pun.",
 	},
 
-	["nowhere"] = {
+	["nowhere"] = { --completed
 		['slide'] = "Mantra ini tidak memerlukan perlaksanaan.",
 
 	},
@@ -1598,7 +1598,7 @@ module.guide = {
 
 
 
-module.spells.manacosts = {
+module.spells.manacosts = { --completed
 	"0 Mana",
 	"1 Mana",
 	"2 Mana",
@@ -1612,7 +1612,7 @@ module.spells.manacosts = {
 	"10 Mana" 
 }
 
-module.spells.tokencosts = {
+module.spells.tokencosts = { --completed
 
 	"1 Token",
 	"2 Token",
@@ -1925,7 +1925,7 @@ module.switchon = {
 
 }
 
-module.switchoff = {
+module.switchoff = { --completed
 
 	["JOKER1"] = "Kamu sekarang akan mendeteksi tangga tak terlihat.",
 	["WICKED1"] = "Kamu sekarang akan mengaktifkan Wicked Rig di bawah.",
@@ -2077,7 +2077,7 @@ module.gui.mana = {
 
 
 module.gui.gameover.extras = {
-
+--completed
 	["noobs"] = "Latihan hanya buat pendaki cupu!",
 	["possessed"] = "Anjir, Heretic sih nyêbêlin itu!",
 	["hypnotised"] = "Eh, dimana aku?",

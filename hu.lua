@@ -1,4 +1,4 @@
---VERSION 4.2--
+--VERSION 4.3--
 --HUNGARIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -240,7 +240,8 @@ module.gui.menu = {
 module.gui.tutorial = {
 	
 	["complete"] = "NYERTÉL!",
-	["choose"] = "Válassz egy osztályt!",
+	["choose"] = "Válassz egy osztályt!\n(ugorj rá egy körre)",
+	["collect"] = "A FOJTATÁSHOZ ÉRINTSD MEG A GÖMBÖT"
 	["difficulty"] = "Nehézsége:",
 	
 }
@@ -539,7 +540,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "Keeper Riget. Ha aktiválják, akkor a lépcső egy véletlenszerű irányba elmozdul vagy elfordul. Ha rendelkezel OPERATOR ranggal, akkor lépcsők, amiket te aktiválsz nem mehetnek lefelé. Ha rendelkezel SENTINEL ranggal, akkor járhatsz Keeper Rigeken anélkül, hogy aktiválnád.",
 	["keeperevent"] = event .. "lépcsőt véletlenszerűen megmozgatja. Mielőtt végrehajtanád, lehet választani puha és erőltetett mód között. Puha módban, ez a varázslat véletlenszerű irányba mozgatja a lépcsőket, anélkül hogy elpusztítana egy lépcsőt is. Erőltetett módban viszont az útban álló lépcsők elpusztúlnak.",
 	["keeperaltevent"] = "Ez a varázslat az összes különleges lépcsőt helyreállítja, még az átkozottakat is. A Tisztítással ellentétben ez nem fogja eltávolítani az átkozott kereszteződéseket.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Riget","véletlenszerűen megmozgatják"),
+	["keepermode"] =  "Ez a varázslat átváltja a drónokat Keeper módba. Ebben a módban a drónok véletlenszerű normális lépcsőkre ráraknak Keeper Riget, vagy bármilyen nem átkozott lépcsőt véletlenszerűen megmozgatnak. A különleges lépcsőket pedig helyreállítja. Ha lépcsők száma határokon kívül van, akkor a drónok létrehoznak vagy elpusztítanak lépcsőket.",
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
@@ -642,7 +643,7 @@ module.spells.descriptions = {
 	--SPLICER
 	["twistside"] = "Ez a varázslat megcsavarja a lépcsőt jobbra vagy balra, és összekötteti az ott lévő lépcsővel. Ha a választott irányban nincs lépcső, akkor létrejön egy. Ha rendelkezel TRANSFORMER ranggal, akkor használhatod ezt a varázslatot megcsavart lépcsőkön.",
 	["twistrotate"] = "Ez a varázslat megcsavarja a lépcsőt egy forgatott irányban, és összekötteti az ott lévő lépcsővel. Ha a választott irányban nincs lépcső, akkor létrejön egy. Ha rendelkezel TRANSFORMER ranggal, akkor használhatod ezt a varázslatot megcsavart lépcsőkön.",
-	["twistup"] = "Ez a varázslat megcsavarja a feletted lévő lépcsőt meg nagy eséllyel az alattad lévőt is (ha normális vagy riges), és lesz belőlük egy 2 szintes csigalépcső. Ha rendelkezel TRANSFORMER ranggal, akkor használhatod ezt a varázslatot megcsavart lépcsőkön.",
+	["twistup"] = "Ez a varázslat megcsavarja a lépcsőt felfelé, és összekötteti az ott lévő lépcsővel. Ha a választott irányban nincs lépcső, akkor létrejön egy. Ha rendelkezel TRANSFORMER ranggal, akkor használhatod ezt a varázslatot megcsavart lépcsőkön.",
 	["canceltwist"] = "Ez a varázslat helyreállít bármilyen csavart lépcsőt. Ha rendelkezel COMBINER ranggal, akkor ezt a varázslatot használhatod arra, hogy helyreállíts a felülethez nem kapcsolódó lépcsőket. Ha rendelkezel MIXER ranggal, akkor ez a varázslat ingyenes lesz. Ha rendelkezel OPTIMUS ranggal, akkor kapsz 1 Manát amikor helyreállítasz egy csavart lépcsőt.",
 	["split2"] = "Ez a varázslat széthasítja a lépcsőt kettő egymással ellentétesen álló lépcsőkké.",
 	["splitalt"] = "Ez a varázslat széthasítja a lépcsőt kettő előrefelé elválasztott lépcsőkké, így könnyen ki tudod kerülni az útban álló lépcsőt - még akkor is, ha a lépcső átkozott.",
@@ -949,11 +950,11 @@ module.gui.settings = {
 	["Morph"] = "Átváltozási animáció megjelenítése Deceiverként vagy Usurperként",
 	["ManaLimit"] = "Csökkentsd a Mana tárolási kapacitásodat ha szeretnéd megnehezíteni a játékot.",
 
-	["Kchoices"] = "Irányválasztási ablak megjelenítése Keeperként",
-	["Hchoices"] = "Irányválasztási ablak megjelenítése Hackerként",
-	["Achoices"] = "Irányválasztási ablak megjelenítése Archonként",
-	["Schoices"] = "Irányválasztási ablak megjelenítése Splicerként",
-	["Gchoices"] = "Irányválasztási ablak megjelenítése Gremlinként",
+	["KChoices"] = "Irányválasztási ablak megjelenítése Keeperként",
+	["HChoices"] = "Irányválasztási ablak megjelenítése Hackerként",
+	["AChoices"] = "Irányválasztási ablak megjelenítése Archonként",
+	["SChoices"] = "Irányválasztási ablak megjelenítése Splicerként",
+	["GChoices"] = "Irányválasztási ablak megjelenítése Gremlinként",
 	["CChoices"] = "Irányválasztási ablak megjelenítése Chameleonként",
 
 	["List"] = "Animált játékoslista megjelenítése a sima Robloxos játéklista helyett",
@@ -1212,23 +1213,25 @@ module.gui.gameover.maxrank ={
 }
 
 module.gui.gameover.credits = {
-	["common"] = {
-		"ŐRÜLT LÉPCSŐK",
-		"Játékot kitalálta, tervezte és kódolta: Sleazel",
-		"Tervezésben segített: cakegirlserina",
-		"Modellek csinálta: ZielonyLeszek",
-		"A hátterek @wwwtyro generátora segítségével jöttek létre",
-		"Adat tároló modult (ProfileSore-t) készítette: loleris",
-		"Köszönjük, hogy játszottál a játékkal!",
-	},
-	["climb"] = "%s Mászás Zenéje - % alkotta: %",
-	["endgame"] = "%s Győzelmi Zenéje - % alkotta: %",
-	["disco"] = "Zenés Lépcső Zenéje - % alkotta: %",
-	["elevator"] = "Lift Zenéje - % alkotta: %", --drifter platforms
+	["crazy"] = "ŐRÜLT",
+	["stairs"] = "LÉPCSŐK",
+	["game"] = "Készítette:",
+	["models"] = "Modellezte:",
+	["icons"] = "Varázsigék ikonjait csinálta:",
+	["boxes"] = "Skyboxokat csinálta:",
+	["data"] = "Datastore modult csinálta:",
+	["translators"] = "FORDÍTÓK:",
 	["testers"] = "VIZSGÁLÓK:",
-	--["translations"] = "FORDÍTÁSOK:",
 	["thanks"] = "KÜLÖN KÖSZÖNET:",
-	--["music"] = "ZENE (APM catalog):",
+	["music"] = "ZENE:",
+
+	
+	["climb"] = "Mászás Zenéje,
+	["endgame"] = "Győzelmi Zenéje",
+	["ghost"] = "Szellem Únió Zenéje",
+	["disco"] = "Zenés Lépcső Zenéje",
+	["elevator"] = "Lift Zenéje", --drifter platforms
+	["finish"] = "Köszönjük, hogy játszottál a játékkal!",
 }
 
 module.static = {

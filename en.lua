@@ -1,4 +1,4 @@
---VERSION 4.2--
+--VERSION 4.3--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -172,13 +172,13 @@ module.gui.questions = {
 	["tutorial"]= "Would you like to play the tutorial?",
 	["skip"] = "Would you like to skip the tutorial?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
-	
+
 	--new
 	["gift"] = "Do you want to gift %s Game Pass to another player?",
 	["choose"] = "Choose a player to receive %s Game Pass", 
 	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
 	["received"] = "You have received %s Game Pass, courtesy of %s!",
-	
+
 	["architect"] = "Architect",
 	["mana"] = "+10 Mana Storage",
 	["spectre"] = "Spectre",
@@ -190,7 +190,7 @@ module.gui.questions = {
 	["racein"] = "Race in:",
 	["go"] = "GO!",
 	["raceoff"] = "Race cancelled",
- 	--end new
+	--end new
 }
 --END NEW
 
@@ -248,7 +248,7 @@ module.gui.results = {
 --NEW 
 
 module.gui.menu = {
-	
+
 	["Codes"] = "Code entry",
 	["Feedback"] = "Send game feedback",
 	["Language"] = "Change game language",
@@ -268,11 +268,12 @@ module.gui.menu = {
 --NEW
 --end screen tutorial
 module.gui.tutorial = {
-	
+
 	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment!",
+	["choose"] = "Please choose your first alignment! (jump on a morph pad)",
+	["collect"] = "COLLECT THE ORB TO CONTINUE"
 	["difficulty"] = "Difficulty:",
-	
+
 }
 
 --END NEW
@@ -458,7 +459,7 @@ module.spells.names = {
 	["tramway"] = "Tram-way",
 	["gremlinevent"] = "Revolvelution",
 	["gremlinaltevent"] = "Gridlock",
-	
+
 	--TUTORIAL
 	["tcreate"] = "Create Stairs",
 	["tflip"] = "Flip Stairs",
@@ -574,7 +575,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to OPERATOR, for any rigs that you trigger to never go down. Rank up to SENTINEL to have an option not to trigger them.",
 	["keeperevent"] = event .. "the Random Move spell. Before executing you can choose soft or forced mode. In soft mode, this spell will move or rotate all normal stairs in random direction, without destroying anything in the process. In forced mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
 	["keeperaltevent"] = "This is an Event spell. It will restore all stairs in the game, including cursed ones. Unlike Purge it will not remove cursed intersections.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
+	["keepermode"] =  "This is a Drone spell. It will change the drone mode to Keeper. In this mode drones will cast randomly either Keeper Rig on normal stairs or Random Move Spell on any un-cursed stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively.",
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
@@ -643,7 +644,7 @@ module.spells.descriptions = {
 	["archonunion"] =  union,
 
 	--DRIFTER
-	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing.  You cannot surf through blocking stairs.",
+	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing. You cannot surf through blocking stairs.",
 	["updrift"] = "This spell will create an elevator using below and above platforms. The platforms will be restored after a given time period. Rank up to VAGABOND to speed up the movement. Rank up to TRAVELLER to be able to boost the lift to second level. Rank up to STRIDER to be able to boost lift again to third level.",
 	["diagdrift"] = "This spell will either: Create a horizontal elevator using below and any platform in a diagonal fashion. Such elevator will disappear after 7 return journeys. OR: If cast in outside direction, this spell will create an elevator would circle around the Tower once.",
 	["spin"] = "This spell will rotate below stairs 180 degrees. Rank up to NOMAD to be able to spin any uncursed stairs.",
@@ -677,7 +678,7 @@ module.spells.descriptions = {
 	--SPLICER
 	["twistside"] = "This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistrotate"] = "This spell will twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistup"] = "This spell will twist above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistup"] = "This spell will twist stairs in the upward direction, connecting them to the above staircase. If there are no stairs above, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "This spell will restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "This spell splits stairs into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "This spell splits stairs into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
@@ -798,17 +799,17 @@ module.gui.ranks = {
 
 	["hypnotised_1"] = "You have been Hypnotised!",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
-	
+
 	["reflected_1"] = "You have been Reflected!",
 	["reflected_3"] = "As Reflected, you control yourself from your ghost perspective!",
-	
+
 	["findmana"] = "Find Mana or Patron Rig to break free.",
 	["permanent"] = "Permanent mode - Complete climb or visit sanctuary to de-morph.",
 
 	["architect_1"] = "You are now an Architect!",
 	["architect_2"] = "Architects cannot acquire any ranks.",
 	["architect_3"] = "Roam the tower to wreak havoc!",
-	
+
 	["tutorial_1"] = "You are in the tutorial!",
 	["tutorial_2"] = "Collect Mana and use spells to climb the tower.",
 	["tutorial_3"] = "Make sure to catch the White Orb at the top!",
@@ -967,7 +968,7 @@ module.gui.multitokens = {
 }
 
 module.gui.feedback = {
-	
+
 	["title"] = "SEND FEEDBACK",
 	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
 	["send"] = "SEND",
@@ -1257,21 +1258,25 @@ module.gui.gameover.maxrank ={
 
 module.gui.gameover.credits = {
 
-	["common"] = {
-		"CRAZY STAIRS",
-		"Game conceptualized, designed and scripted by Sleazel",
-		"Help with design - cakegirlserina",
-		"Models by ZielonyLeszek",
-		"Skyboxes by @wwwtyro's generator",
-		"Datastore module, ProfileStore, by loleris",
-		"Thanks for playing!",	
-	},
-	["climb"] = "%s Climb Music - % by %",
-	["endgame"] = "%s Endgame Music - % by %",
-	["disco"] = "Disco stairs music - % by %",
-	["elevator"] = "Elevator music - % by %", --drifter platforms
+	["crazy"] = "CRAZY",
+	["stairs"] = "STAIRS",
+	["game"] = "A game by:",
+	["models"] = "Models by:",
+	["icons"] = "Spell Icons by:",
+	["boxes"] = "Skyboxes by:",
+	["data"] = "Datastore module by:",
+	["translators"] = "TRANSLATORS:",
 	["testers"] = "TESTERS:",
 	["thanks"] = "SPECIAL THANKS:",
+	["music"] = "MUSIC:",
+
+
+	["climb"] = "Climb music",
+	["endgame"] = "Endgame music",
+	["ghost"] = "Ghost Union music",
+	["disco"] = "Disco Stairs music",
+	["elevator"] = "Elevator music", --drifter platforms
+	["finish"] = "Thanks for playing!",
 
 }
 
@@ -1880,13 +1885,13 @@ module.serverfeedback = {
 	["used"] = "Code has been used already.",
 	["tooshort"] = "Your message was too short and not sent.",
 	["sent"] = "Your message was sent successfully, thank you.",
-	
+
 	--NEW
 	['noobteleport'] = "You cannot switch towers in the tutorial!",
 	['noobmorph'] = "Complete the tutorial to be able to morph!",
 	['noobnocode'] = "Complete the tutorial to be able to use codes!",
 	['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
-	
+
 	--GIFTING
 	['notingame'] = "Player has left the game, you cannot give the game pass!",
 	['alreadyowns'] = "Player already owns this game pass.",
@@ -1971,7 +1976,7 @@ module.serverbroadcast = {
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
 	["infstart"] = "Infinite race started!",
-	
+
 	--END NEW
 
 }
@@ -2001,7 +2006,7 @@ module.localfeedback = {
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
 	["nounion"] = "You can't use Ghost Union right now.",
-	
+
 	--NEW
 	["failedjoin"] = "Failed to join the race.",
 	--END NEW
@@ -2260,6 +2265,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
-
-
 
