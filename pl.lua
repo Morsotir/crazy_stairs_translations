@@ -516,7 +516,7 @@ local timedExtra = " Awansuj do %s żeby zwiększy limit do 90s. Rzucenie tego z
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "This spell allows you to create stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
+	["summon"] = "To zaklęcie pozwala na tworzenie schodów w dowolnym kierunku. Jeśli są już schody na drodze tych budowanych, one będą zniszczone.",
 	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
 	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
 	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
